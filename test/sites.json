@@ -1,0 +1,3564 @@
+{
+  "list": [
+    {
+      "title": "auburn",
+      "host": "http://auburn.craigslist.org",
+      "state": "Alabama"
+    },
+    {
+      "title": "birmingham",
+      "host": "http://bham.craigslist.org",
+      "state": "Alabama"
+    },
+    {
+      "title": "dothan",
+      "host": "http://dothan.craigslist.org",
+      "state": "Alabama"
+    },
+    {
+      "title": "florence / muscle shoals",
+      "host": "http://shoals.craigslist.org",
+      "state": "Alabama"
+    },
+    {
+      "title": "gadsden-anniston",
+      "host": "http://gadsden.craigslist.org",
+      "state": "Alabama"
+    },
+    {
+      "title": "huntsville / decatur",
+      "host": "http://huntsville.craigslist.org",
+      "state": "Alabama"
+    },
+    {
+      "title": "mobile",
+      "host": "http://mobile.craigslist.org",
+      "state": "Alabama"
+    },
+    {
+      "title": "montgomery",
+      "host": "http://montgomery.craigslist.org",
+      "state": "Alabama"
+    },
+    {
+      "title": "tuscaloosa",
+      "host": "http://tuscaloosa.craigslist.org",
+      "state": "Alabama"
+    },
+    {
+      "title": "anchorage / mat-su",
+      "host": "http://anchorage.craigslist.org",
+      "state": "Alaska"
+    },
+    {
+      "title": "fairbanks",
+      "host": "http://fairbanks.craigslist.org",
+      "state": "Alaska"
+    },
+    {
+      "title": "kenai peninsula",
+      "host": "http://kenai.craigslist.org",
+      "state": "Alaska"
+    },
+    {
+      "title": "southeast alaska",
+      "host": "http://juneau.craigslist.org",
+      "state": "Alaska"
+    },
+    {
+      "title": "flagstaff / sedona",
+      "host": "http://flagstaff.craigslist.org",
+      "state": "Arizona"
+    },
+    {
+      "title": "mohave county",
+      "host": "http://mohave.craigslist.org",
+      "state": "Arizona"
+    },
+    {
+      "title": "phoenix",
+      "host": "http://phoenix.craigslist.org",
+      "state": "Arizona"
+    },
+    {
+      "title": "prescott",
+      "host": "http://prescott.craigslist.org",
+      "state": "Arizona"
+    },
+    {
+      "title": "show low",
+      "host": "http://showlow.craigslist.org",
+      "state": "Arizona"
+    },
+    {
+      "title": "sierra vista",
+      "host": "http://sierravista.craigslist.org",
+      "state": "Arizona"
+    },
+    {
+      "title": "tucson",
+      "host": "http://tucson.craigslist.org",
+      "state": "Arizona"
+    },
+    {
+      "title": "yuma",
+      "host": "http://yuma.craigslist.org",
+      "state": "Arizona"
+    },
+    {
+      "title": "fayetteville ",
+      "host": "http://fayar.craigslist.org",
+      "state": "Arkansas"
+    },
+    {
+      "title": "fort smith",
+      "host": "http://fortsmith.craigslist.org",
+      "state": "Arkansas"
+    },
+    {
+      "title": "jonesboro",
+      "host": "http://jonesboro.craigslist.org",
+      "state": "Arkansas"
+    },
+    {
+      "title": "little rock",
+      "host": "http://littlerock.craigslist.org",
+      "state": "Arkansas"
+    },
+    {
+      "title": "texarkana",
+      "host": "http://texarkana.craigslist.org",
+      "state": "Arkansas"
+    },
+    {
+      "title": "bakersfield",
+      "host": "http://bakersfield.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "chico",
+      "host": "http://chico.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "fresno / madera",
+      "host": "http://fresno.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "gold country",
+      "host": "http://goldcountry.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "hanford-corcoran",
+      "host": "http://hanford.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "humboldt county",
+      "host": "http://humboldt.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "imperial county",
+      "host": "http://imperial.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "inland empire",
+      "host": "http://inlandempire.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "los angeles",
+      "host": "http://losangeles.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "mendocino county",
+      "host": "http://mendocino.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "merced",
+      "host": "http://merced.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "modesto",
+      "host": "http://modesto.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "monterey bay",
+      "host": "http://monterey.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "orange county",
+      "host": "http://orangecounty.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "palm springs",
+      "host": "http://palmsprings.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "redding",
+      "host": "http://redding.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "sacramento",
+      "host": "http://sacramento.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "san diego",
+      "host": "http://sandiego.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "san francisco bay area",
+      "host": "http://sfbay.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "san luis obispo",
+      "host": "http://slo.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "santa barbara",
+      "host": "http://santabarbara.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "santa maria",
+      "host": "http://santamaria.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "siskiyou county",
+      "host": "http://siskiyou.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "stockton",
+      "host": "http://stockton.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "susanville",
+      "host": "http://susanville.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "ventura county",
+      "host": "http://ventura.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "visalia-tulare",
+      "host": "http://visalia.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "yuba-sutter",
+      "host": "http://yubasutter.craigslist.org",
+      "state": "California"
+    },
+    {
+      "title": "boulder",
+      "host": "http://boulder.craigslist.org",
+      "state": "Colorado"
+    },
+    {
+      "title": "colorado springs",
+      "host": "http://cosprings.craigslist.org",
+      "state": "Colorado"
+    },
+    {
+      "title": "denver",
+      "host": "http://denver.craigslist.org",
+      "state": "Colorado"
+    },
+    {
+      "title": "eastern CO",
+      "host": "http://eastco.craigslist.org",
+      "state": "Colorado"
+    },
+    {
+      "title": "fort collins / north CO",
+      "host": "http://fortcollins.craigslist.org",
+      "state": "Colorado"
+    },
+    {
+      "title": "high rockies",
+      "host": "http://rockies.craigslist.org",
+      "state": "Colorado"
+    },
+    {
+      "title": "pueblo",
+      "host": "http://pueblo.craigslist.org",
+      "state": "Colorado"
+    },
+    {
+      "title": "western slope",
+      "host": "http://westslope.craigslist.org",
+      "state": "Colorado"
+    },
+    {
+      "title": "eastern CT",
+      "host": "http://newlondon.craigslist.org",
+      "state": "Connecticut"
+    },
+    {
+      "title": "hartford",
+      "host": "http://hartford.craigslist.org",
+      "state": "Connecticut"
+    },
+    {
+      "title": "new haven",
+      "host": "http://newhaven.craigslist.org",
+      "state": "Connecticut"
+    },
+    {
+      "title": "northwest CT",
+      "host": "http://nwct.craigslist.org",
+      "state": "Connecticut"
+    },
+    {
+      "title": "delaware",
+      "host": "http://delaware.craigslist.org",
+      "state": "Delaware"
+    },
+    {
+      "title": "washington",
+      "host": "http://washingtondc.craigslist.org",
+      "state": "District of Columbia"
+    },
+    {
+      "title": "daytona beach",
+      "host": "http://daytona.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "florida keys",
+      "host": "http://keys.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "fort lauderdale",
+      "host": "http://fortlauderdale.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "ft myers / SW florida",
+      "host": "http://fortmyers.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "gainesville",
+      "host": "http://gainesville.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "heartland florida",
+      "host": "http://cfl.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "jacksonville",
+      "host": "http://jacksonville.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "lakeland",
+      "host": "http://lakeland.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "north central FL",
+      "host": "http://lakecity.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "ocala",
+      "host": "http://ocala.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "okaloosa / walton",
+      "host": "http://okaloosa.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "orlando",
+      "host": "http://orlando.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "panama city",
+      "host": "http://panamacity.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "pensacola",
+      "host": "http://pensacola.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "sarasota-bradenton",
+      "host": "http://sarasota.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "south florida",
+      "host": "http://miami.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "space coast",
+      "host": "http://spacecoast.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "st augustine",
+      "host": "http://staugustine.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "tallahassee",
+      "host": "http://tallahassee.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "tampa bay area",
+      "host": "http://tampa.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "treasure coast",
+      "host": "http://treasure.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "west palm beach",
+      "host": "http://westpalmbeach.craigslist.org",
+      "state": "Florida"
+    },
+    {
+      "title": "albany ",
+      "host": "http://albanyga.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "athens",
+      "host": "http://athensga.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "atlanta",
+      "host": "http://atlanta.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "augusta",
+      "host": "http://augusta.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "brunswick",
+      "host": "http://brunswick.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "columbus ",
+      "host": "http://columbusga.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "macon / warner robins",
+      "host": "http://macon.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "northwest GA",
+      "host": "http://nwga.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "savannah / hinesville",
+      "host": "http://savannah.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "statesboro",
+      "host": "http://statesboro.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "valdosta",
+      "host": "http://valdosta.craigslist.org",
+      "state": "Georgia"
+    },
+    {
+      "title": "hawaii",
+      "host": "http://honolulu.craigslist.org",
+      "state": "Hawaii"
+    },
+    {
+      "title": "boise",
+      "host": "http://boise.craigslist.org",
+      "state": "Idaho"
+    },
+    {
+      "title": "east idaho",
+      "host": "http://eastidaho.craigslist.org",
+      "state": "Idaho"
+    },
+    {
+      "title": "lewiston / clarkston",
+      "host": "http://lewiston.craigslist.org",
+      "state": "Idaho"
+    },
+    {
+      "title": "twin falls",
+      "host": "http://twinfalls.craigslist.org",
+      "state": "Idaho"
+    },
+    {
+      "title": "bloomington-normal",
+      "host": "http://bn.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "champaign urbana",
+      "host": "http://chambana.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "chicago",
+      "host": "http://chicago.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "decatur",
+      "host": "http://decatur.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "la salle co",
+      "host": "http://lasalle.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "mattoon-charleston",
+      "host": "http://mattoon.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "peoria",
+      "host": "http://peoria.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "rockford",
+      "host": "http://rockford.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "southern illinois",
+      "host": "http://carbondale.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "springfield ",
+      "host": "http://springfieldil.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "western IL",
+      "host": "http://quincy.craigslist.org",
+      "state": "Illinois"
+    },
+    {
+      "title": "bloomington",
+      "host": "http://bloomington.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "evansville",
+      "host": "http://evansville.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "fort wayne",
+      "host": "http://fortwayne.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "indianapolis",
+      "host": "http://indianapolis.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "kokomo",
+      "host": "http://kokomo.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "lafayette / west lafayette",
+      "host": "http://tippecanoe.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "muncie / anderson",
+      "host": "http://muncie.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "richmond ",
+      "host": "http://richmondin.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "south bend / michiana",
+      "host": "http://southbend.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "terre haute",
+      "host": "http://terrehaute.craigslist.org",
+      "state": "Indiana"
+    },
+    {
+      "title": "ames",
+      "host": "http://ames.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "cedar rapids",
+      "host": "http://cedarrapids.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "des moines",
+      "host": "http://desmoines.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "dubuque",
+      "host": "http://dubuque.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "fort dodge",
+      "host": "http://fortdodge.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "iowa city",
+      "host": "http://iowacity.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "mason city",
+      "host": "http://masoncity.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "quad cities",
+      "host": "http://quadcities.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "sioux city",
+      "host": "http://siouxcity.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "southeast IA",
+      "host": "http://ottumwa.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "waterloo / cedar falls",
+      "host": "http://waterloo.craigslist.org",
+      "state": "Iowa"
+    },
+    {
+      "title": "lawrence",
+      "host": "http://lawrence.craigslist.org",
+      "state": "Kansas"
+    },
+    {
+      "title": "manhattan",
+      "host": "http://ksu.craigslist.org",
+      "state": "Kansas"
+    },
+    {
+      "title": "northwest KS",
+      "host": "http://nwks.craigslist.org",
+      "state": "Kansas"
+    },
+    {
+      "title": "salina",
+      "host": "http://salina.craigslist.org",
+      "state": "Kansas"
+    },
+    {
+      "title": "southeast KS",
+      "host": "http://seks.craigslist.org",
+      "state": "Kansas"
+    },
+    {
+      "title": "southwest KS",
+      "host": "http://swks.craigslist.org",
+      "state": "Kansas"
+    },
+    {
+      "title": "topeka",
+      "host": "http://topeka.craigslist.org",
+      "state": "Kansas"
+    },
+    {
+      "title": "wichita",
+      "host": "http://wichita.craigslist.org",
+      "state": "Kansas"
+    },
+    {
+      "title": "bowling green",
+      "host": "http://bgky.craigslist.org",
+      "state": "Kentucky"
+    },
+    {
+      "title": "eastern kentucky",
+      "host": "http://eastky.craigslist.org",
+      "state": "Kentucky"
+    },
+    {
+      "title": "lexington",
+      "host": "http://lexington.craigslist.org",
+      "state": "Kentucky"
+    },
+    {
+      "title": "louisville",
+      "host": "http://louisville.craigslist.org",
+      "state": "Kentucky"
+    },
+    {
+      "title": "owensboro",
+      "host": "http://owensboro.craigslist.org",
+      "state": "Kentucky"
+    },
+    {
+      "title": "western KY",
+      "host": "http://westky.craigslist.org",
+      "state": "Kentucky"
+    },
+    {
+      "title": "baton rouge",
+      "host": "http://batonrouge.craigslist.org",
+      "state": "Louisiana"
+    },
+    {
+      "title": "central louisiana",
+      "host": "http://cenla.craigslist.org",
+      "state": "Louisiana"
+    },
+    {
+      "title": "houma",
+      "host": "http://houma.craigslist.org",
+      "state": "Louisiana"
+    },
+    {
+      "title": "lafayette",
+      "host": "http://lafayette.craigslist.org",
+      "state": "Louisiana"
+    },
+    {
+      "title": "lake charles",
+      "host": "http://lakecharles.craigslist.org",
+      "state": "Louisiana"
+    },
+    {
+      "title": "monroe",
+      "host": "http://monroe.craigslist.org",
+      "state": "Louisiana"
+    },
+    {
+      "title": "new orleans",
+      "host": "http://neworleans.craigslist.org",
+      "state": "Louisiana"
+    },
+    {
+      "title": "shreveport",
+      "host": "http://shreveport.craigslist.org",
+      "state": "Louisiana"
+    },
+    {
+      "title": "maine",
+      "host": "http://maine.craigslist.org",
+      "state": "Maine"
+    },
+    {
+      "title": "annapolis",
+      "host": "http://annapolis.craigslist.org",
+      "state": "Maryland"
+    },
+    {
+      "title": "baltimore",
+      "host": "http://baltimore.craigslist.org",
+      "state": "Maryland"
+    },
+    {
+      "title": "eastern shore",
+      "host": "http://easternshore.craigslist.org",
+      "state": "Maryland"
+    },
+    {
+      "title": "frederick",
+      "host": "http://frederick.craigslist.org",
+      "state": "Maryland"
+    },
+    {
+      "title": "southern maryland",
+      "host": "http://smd.craigslist.org",
+      "state": "Maryland"
+    },
+    {
+      "title": "western maryland",
+      "host": "http://westmd.craigslist.org",
+      "state": "Maryland"
+    },
+    {
+      "title": "boston",
+      "host": "http://boston.craigslist.org",
+      "state": "Massachusetts"
+    },
+    {
+      "title": "cape cod / islands",
+      "host": "http://capecod.craigslist.org",
+      "state": "Massachusetts"
+    },
+    {
+      "title": "south coast",
+      "host": "http://southcoast.craigslist.org",
+      "state": "Massachusetts"
+    },
+    {
+      "title": "western massachusetts",
+      "host": "http://westernmass.craigslist.org",
+      "state": "Massachusetts"
+    },
+    {
+      "title": "worcester / central MA",
+      "host": "http://worcester.craigslist.org",
+      "state": "Massachusetts"
+    },
+    {
+      "title": "ann arbor",
+      "host": "http://annarbor.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "battle creek",
+      "host": "http://battlecreek.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "central michigan",
+      "host": "http://centralmich.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "detroit metro",
+      "host": "http://detroit.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "flint",
+      "host": "http://flint.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "grand rapids",
+      "host": "http://grandrapids.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "holland",
+      "host": "http://holland.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "jackson ",
+      "host": "http://jxn.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "kalamazoo",
+      "host": "http://kalamazoo.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "lansing",
+      "host": "http://lansing.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "monroe ",
+      "host": "http://monroemi.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "muskegon",
+      "host": "http://muskegon.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "northern michigan",
+      "host": "http://nmi.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "port huron",
+      "host": "http://porthuron.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "saginaw-midland-baycity",
+      "host": "http://saginaw.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "southwest michigan",
+      "host": "http://swmi.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "the thumb",
+      "host": "http://thumb.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "upper peninsula",
+      "host": "http://up.craigslist.org",
+      "state": "Michigan"
+    },
+    {
+      "title": "bemidji",
+      "host": "http://bemidji.craigslist.org",
+      "state": "Minnesota"
+    },
+    {
+      "title": "brainerd",
+      "host": "http://brainerd.craigslist.org",
+      "state": "Minnesota"
+    },
+    {
+      "title": "duluth / superior",
+      "host": "http://duluth.craigslist.org",
+      "state": "Minnesota"
+    },
+    {
+      "title": "mankato",
+      "host": "http://mankato.craigslist.org",
+      "state": "Minnesota"
+    },
+    {
+      "title": "minneapolis / st paul",
+      "host": "http://minneapolis.craigslist.org",
+      "state": "Minnesota"
+    },
+    {
+      "title": "rochester ",
+      "host": "http://rmn.craigslist.org",
+      "state": "Minnesota"
+    },
+    {
+      "title": "southwest MN",
+      "host": "http://marshall.craigslist.org",
+      "state": "Minnesota"
+    },
+    {
+      "title": "st cloud",
+      "host": "http://stcloud.craigslist.org",
+      "state": "Minnesota"
+    },
+    {
+      "title": "gulfport / biloxi",
+      "host": "http://gulfport.craigslist.org",
+      "state": "Mississippi"
+    },
+    {
+      "title": "hattiesburg",
+      "host": "http://hattiesburg.craigslist.org",
+      "state": "Mississippi"
+    },
+    {
+      "title": "jackson",
+      "host": "http://jackson.craigslist.org",
+      "state": "Mississippi"
+    },
+    {
+      "title": "meridian",
+      "host": "http://meridian.craigslist.org",
+      "state": "Mississippi"
+    },
+    {
+      "title": "north mississippi",
+      "host": "http://northmiss.craigslist.org",
+      "state": "Mississippi"
+    },
+    {
+      "title": "southwest MS",
+      "host": "http://natchez.craigslist.org",
+      "state": "Mississippi"
+    },
+    {
+      "title": "columbia / jeff city",
+      "host": "http://columbiamo.craigslist.org",
+      "state": "Missouri"
+    },
+    {
+      "title": "joplin",
+      "host": "http://joplin.craigslist.org",
+      "state": "Missouri"
+    },
+    {
+      "title": "kansas city",
+      "host": "http://kansascity.craigslist.org",
+      "state": "Missouri"
+    },
+    {
+      "title": "kirksville",
+      "host": "http://kirksville.craigslist.org",
+      "state": "Missouri"
+    },
+    {
+      "title": "lake of the ozarks",
+      "host": "http://loz.craigslist.org",
+      "state": "Missouri"
+    },
+    {
+      "title": "southeast missouri",
+      "host": "http://semo.craigslist.org",
+      "state": "Missouri"
+    },
+    {
+      "title": "springfield",
+      "host": "http://springfield.craigslist.org",
+      "state": "Missouri"
+    },
+    {
+      "title": "st joseph",
+      "host": "http://stjoseph.craigslist.org",
+      "state": "Missouri"
+    },
+    {
+      "title": "st louis",
+      "host": "http://stlouis.craigslist.org",
+      "state": "Missouri"
+    },
+    {
+      "title": "billings",
+      "host": "http://billings.craigslist.org",
+      "state": "Montana"
+    },
+    {
+      "title": "bozeman",
+      "host": "http://bozeman.craigslist.org",
+      "state": "Montana"
+    },
+    {
+      "title": "butte",
+      "host": "http://butte.craigslist.org",
+      "state": "Montana"
+    },
+    {
+      "title": "great falls",
+      "host": "http://greatfalls.craigslist.org",
+      "state": "Montana"
+    },
+    {
+      "title": "helena",
+      "host": "http://helena.craigslist.org",
+      "state": "Montana"
+    },
+    {
+      "title": "kalispell",
+      "host": "http://kalispell.craigslist.org",
+      "state": "Montana"
+    },
+    {
+      "title": "missoula",
+      "host": "http://missoula.craigslist.org",
+      "state": "Montana"
+    },
+    {
+      "title": "eastern montana",
+      "host": "http://montana.craigslist.org",
+      "state": "Montana"
+    },
+    {
+      "title": "grand island",
+      "host": "http://grandisland.craigslist.org",
+      "state": "Nebraska"
+    },
+    {
+      "title": "lincoln",
+      "host": "http://lincoln.craigslist.org",
+      "state": "Nebraska"
+    },
+    {
+      "title": "north platte",
+      "host": "http://northplatte.craigslist.org",
+      "state": "Nebraska"
+    },
+    {
+      "title": "omaha / council bluffs",
+      "host": "http://omaha.craigslist.org",
+      "state": "Nebraska"
+    },
+    {
+      "title": "scottsbluff / panhandle",
+      "host": "http://scottsbluff.craigslist.org",
+      "state": "Nebraska"
+    },
+    {
+      "title": "elko",
+      "host": "http://elko.craigslist.org",
+      "state": "Nevada"
+    },
+    {
+      "title": "las vegas",
+      "host": "http://lasvegas.craigslist.org",
+      "state": "Nevada"
+    },
+    {
+      "title": "reno / tahoe",
+      "host": "http://reno.craigslist.org",
+      "state": "Nevada"
+    },
+    {
+      "title": "new hampshire",
+      "host": "http://nh.craigslist.org",
+      "state": "New Hampshire"
+    },
+    {
+      "title": "central NJ",
+      "host": "http://cnj.craigslist.org",
+      "state": "New Jersey"
+    },
+    {
+      "title": "jersey shore",
+      "host": "http://jerseyshore.craigslist.org",
+      "state": "New Jersey"
+    },
+    {
+      "title": "north jersey",
+      "host": "http://newjersey.craigslist.org",
+      "state": "New Jersey"
+    },
+    {
+      "title": "south jersey",
+      "host": "http://southjersey.craigslist.org",
+      "state": "New Jersey"
+    },
+    {
+      "title": "albuquerque",
+      "host": "http://albuquerque.craigslist.org",
+      "state": "New Mexico"
+    },
+    {
+      "title": "clovis / portales",
+      "host": "http://clovis.craigslist.org",
+      "state": "New Mexico"
+    },
+    {
+      "title": "farmington",
+      "host": "http://farmington.craigslist.org",
+      "state": "New Mexico"
+    },
+    {
+      "title": "las cruces",
+      "host": "http://lascruces.craigslist.org",
+      "state": "New Mexico"
+    },
+    {
+      "title": "roswell / carlsbad",
+      "host": "http://roswell.craigslist.org",
+      "state": "New Mexico"
+    },
+    {
+      "title": "santa fe / taos",
+      "host": "http://santafe.craigslist.org",
+      "state": "New Mexico"
+    },
+    {
+      "title": "albany",
+      "host": "http://albany.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "binghamton",
+      "host": "http://binghamton.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "buffalo",
+      "host": "http://buffalo.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "catskills",
+      "host": "http://catskills.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "chautauqua",
+      "host": "http://chautauqua.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "elmira-corning",
+      "host": "http://elmira.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "finger lakes",
+      "host": "http://fingerlakes.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "glens falls",
+      "host": "http://glensfalls.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "hudson valley",
+      "host": "http://hudsonvalley.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "ithaca",
+      "host": "http://ithaca.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "long island",
+      "host": "http://longisland.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "new york city",
+      "host": "http://newyork.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "oneonta",
+      "host": "http://oneonta.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "plattsburgh-adirondacks",
+      "host": "http://plattsburgh.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "potsdam-canton-massena",
+      "host": "http://potsdam.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "rochester",
+      "host": "http://rochester.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "syracuse",
+      "host": "http://syracuse.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "twin tiers NY/PA",
+      "host": "http://twintiers.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "utica-rome-oneida",
+      "host": "http://utica.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "watertown",
+      "host": "http://watertown.craigslist.org",
+      "state": "New York"
+    },
+    {
+      "title": "asheville",
+      "host": "http://asheville.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "boone",
+      "host": "http://boone.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "charlotte",
+      "host": "http://charlotte.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "eastern NC",
+      "host": "http://eastnc.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "fayetteville",
+      "host": "http://fayetteville.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "greensboro",
+      "host": "http://greensboro.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "hickory / lenoir",
+      "host": "http://hickory.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "jacksonville ",
+      "host": "http://onslow.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "outer banks",
+      "host": "http://outerbanks.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "raleigh / durham / CH",
+      "host": "http://raleigh.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "wilmington",
+      "host": "http://wilmington.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "winston-salem",
+      "host": "http://winstonsalem.craigslist.org",
+      "state": "North Carolina"
+    },
+    {
+      "title": "bismarck",
+      "host": "http://bismarck.craigslist.org",
+      "state": "North Dakota"
+    },
+    {
+      "title": "fargo / moorhead",
+      "host": "http://fargo.craigslist.org",
+      "state": "North Dakota"
+    },
+    {
+      "title": "grand forks",
+      "host": "http://grandforks.craigslist.org",
+      "state": "North Dakota"
+    },
+    {
+      "title": "north dakota",
+      "host": "http://nd.craigslist.org",
+      "state": "North Dakota"
+    },
+    {
+      "title": "akron / canton",
+      "host": "http://akroncanton.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "ashtabula",
+      "host": "http://ashtabula.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "athens ",
+      "host": "http://athensohio.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "chillicothe",
+      "host": "http://chillicothe.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "cincinnati",
+      "host": "http://cincinnati.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "cleveland",
+      "host": "http://cleveland.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "columbus",
+      "host": "http://columbus.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "dayton / springfield",
+      "host": "http://dayton.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "lima / findlay",
+      "host": "http://limaohio.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "mansfield",
+      "host": "http://mansfield.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "sandusky",
+      "host": "http://sandusky.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "toledo",
+      "host": "http://toledo.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "tuscarawas co",
+      "host": "http://tuscarawas.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "youngstown",
+      "host": "http://youngstown.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "zanesville / cambridge",
+      "host": "http://zanesville.craigslist.org",
+      "state": "Ohio"
+    },
+    {
+      "title": "lawton",
+      "host": "http://lawton.craigslist.org",
+      "state": "Oklahoma"
+    },
+    {
+      "title": "northwest OK",
+      "host": "http://enid.craigslist.org",
+      "state": "Oklahoma"
+    },
+    {
+      "title": "oklahoma city",
+      "host": "http://oklahomacity.craigslist.org",
+      "state": "Oklahoma"
+    },
+    {
+      "title": "stillwater",
+      "host": "http://stillwater.craigslist.org",
+      "state": "Oklahoma"
+    },
+    {
+      "title": "tulsa",
+      "host": "http://tulsa.craigslist.org",
+      "state": "Oklahoma"
+    },
+    {
+      "title": "bend",
+      "host": "http://bend.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "corvallis/albany",
+      "host": "http://corvallis.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "east oregon",
+      "host": "http://eastoregon.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "eugene",
+      "host": "http://eugene.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "klamath falls",
+      "host": "http://klamath.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "medford-ashland",
+      "host": "http://medford.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "oregon coast",
+      "host": "http://oregoncoast.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "portland",
+      "host": "http://portland.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "roseburg",
+      "host": "http://roseburg.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "salem",
+      "host": "http://salem.craigslist.org",
+      "state": "Oregon"
+    },
+    {
+      "title": "altoona-johnstown",
+      "host": "http://altoona.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "cumberland valley",
+      "host": "http://chambersburg.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "erie",
+      "host": "http://erie.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "harrisburg",
+      "host": "http://harrisburg.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "lancaster",
+      "host": "http://lancaster.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "lehigh valley",
+      "host": "http://allentown.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "meadville",
+      "host": "http://meadville.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "philadelphia",
+      "host": "http://philadelphia.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "pittsburgh",
+      "host": "http://pittsburgh.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "poconos",
+      "host": "http://poconos.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "reading",
+      "host": "http://reading.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "scranton / wilkes-barre",
+      "host": "http://scranton.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "state college",
+      "host": "http://pennstate.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "williamsport",
+      "host": "http://williamsport.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "york",
+      "host": "http://york.craigslist.org",
+      "state": "Pennsylvania"
+    },
+    {
+      "title": "rhode island",
+      "host": "http://providence.craigslist.org",
+      "state": "Rhode Island"
+    },
+    {
+      "title": "charleston",
+      "host": "http://charleston.craigslist.org",
+      "state": "South Carolina"
+    },
+    {
+      "title": "columbia",
+      "host": "http://columbia.craigslist.org",
+      "state": "South Carolina"
+    },
+    {
+      "title": "florence",
+      "host": "http://florencesc.craigslist.org",
+      "state": "South Carolina"
+    },
+    {
+      "title": "greenville / upstate",
+      "host": "http://greenville.craigslist.org",
+      "state": "South Carolina"
+    },
+    {
+      "title": "hilton head",
+      "host": "http://hiltonhead.craigslist.org",
+      "state": "South Carolina"
+    },
+    {
+      "title": "myrtle beach",
+      "host": "http://myrtlebeach.craigslist.org",
+      "state": "South Carolina"
+    },
+    {
+      "title": "northeast SD",
+      "host": "http://nesd.craigslist.org",
+      "state": "South Dakota"
+    },
+    {
+      "title": "pierre / central SD",
+      "host": "http://csd.craigslist.org",
+      "state": "South Dakota"
+    },
+    {
+      "title": "rapid city / west SD",
+      "host": "http://rapidcity.craigslist.org",
+      "state": "South Dakota"
+    },
+    {
+      "title": "sioux falls / SE SD",
+      "host": "http://siouxfalls.craigslist.org",
+      "state": "South Dakota"
+    },
+    {
+      "title": "south dakota",
+      "host": "http://sd.craigslist.org",
+      "state": "South Dakota"
+    },
+    {
+      "title": "chattanooga",
+      "host": "http://chattanooga.craigslist.org",
+      "state": "Tennessee"
+    },
+    {
+      "title": "clarksville",
+      "host": "http://clarksville.craigslist.org",
+      "state": "Tennessee"
+    },
+    {
+      "title": "cookeville",
+      "host": "http://cookeville.craigslist.org",
+      "state": "Tennessee"
+    },
+    {
+      "title": "jackson  ",
+      "host": "http://jacksontn.craigslist.org",
+      "state": "Tennessee"
+    },
+    {
+      "title": "knoxville",
+      "host": "http://knoxville.craigslist.org",
+      "state": "Tennessee"
+    },
+    {
+      "title": "memphis",
+      "host": "http://memphis.craigslist.org",
+      "state": "Tennessee"
+    },
+    {
+      "title": "nashville",
+      "host": "http://nashville.craigslist.org",
+      "state": "Tennessee"
+    },
+    {
+      "title": "tri-cities",
+      "host": "http://tricities.craigslist.org",
+      "state": "Tennessee"
+    },
+    {
+      "title": "abilene",
+      "host": "http://abilene.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "amarillo",
+      "host": "http://amarillo.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "austin",
+      "host": "http://austin.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "beaumont / port arthur",
+      "host": "http://beaumont.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "brownsville",
+      "host": "http://brownsville.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "college station",
+      "host": "http://collegestation.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "corpus christi",
+      "host": "http://corpuschristi.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "dallas / fort worth",
+      "host": "http://dallas.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "deep east texas",
+      "host": "http://nacogdoches.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "del rio / eagle pass",
+      "host": "http://delrio.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "el paso",
+      "host": "http://elpaso.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "galveston",
+      "host": "http://galveston.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "houston",
+      "host": "http://houston.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "killeen / temple / ft hood",
+      "host": "http://killeen.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "laredo",
+      "host": "http://laredo.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "lubbock",
+      "host": "http://lubbock.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "mcallen / edinburg",
+      "host": "http://mcallen.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "odessa / midland",
+      "host": "http://odessa.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "san angelo",
+      "host": "http://sanangelo.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "san antonio",
+      "host": "http://sanantonio.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "san marcos",
+      "host": "http://sanmarcos.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "southwest TX",
+      "host": "http://bigbend.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "texoma",
+      "host": "http://texoma.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "tyler / east TX",
+      "host": "http://easttexas.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "victoria ",
+      "host": "http://victoriatx.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "waco",
+      "host": "http://waco.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "wichita falls",
+      "host": "http://wichitafalls.craigslist.org",
+      "state": "Texas"
+    },
+    {
+      "title": "logan",
+      "host": "http://logan.craigslist.org",
+      "state": "Utah"
+    },
+    {
+      "title": "ogden-clearfield",
+      "host": "http://ogden.craigslist.org",
+      "state": "Utah"
+    },
+    {
+      "title": "provo / orem",
+      "host": "http://provo.craigslist.org",
+      "state": "Utah"
+    },
+    {
+      "title": "salt lake city",
+      "host": "http://saltlakecity.craigslist.org",
+      "state": "Utah"
+    },
+    {
+      "title": "st george",
+      "host": "http://stgeorge.craigslist.org",
+      "state": "Utah"
+    },
+    {
+      "title": "vermont",
+      "host": "http://burlington.craigslist.org",
+      "state": "Vermont"
+    },
+    {
+      "title": "charlottesville",
+      "host": "http://charlottesville.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "danville",
+      "host": "http://danville.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "fredericksburg",
+      "host": "http://fredericksburg.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "hampton roads",
+      "host": "http://norfolk.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "harrisonburg",
+      "host": "http://harrisonburg.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "lynchburg",
+      "host": "http://lynchburg.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "new river valley",
+      "host": "http://blacksburg.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "richmond",
+      "host": "http://richmond.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "roanoke",
+      "host": "http://roanoke.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "southwest VA",
+      "host": "http://swva.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "winchester",
+      "host": "http://winchester.craigslist.org",
+      "state": "Virginia"
+    },
+    {
+      "title": "bellingham",
+      "host": "http://bellingham.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "kennewick-pasco-richland",
+      "host": "http://kpr.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "moses lake",
+      "host": "http://moseslake.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "olympic peninsula",
+      "host": "http://olympic.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "pullman / moscow",
+      "host": "http://pullman.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "seattle-tacoma",
+      "host": "http://seattle.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "skagit / island / SJI",
+      "host": "http://skagit.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "spokane / coeur d'alene",
+      "host": "http://spokane.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "wenatchee",
+      "host": "http://wenatchee.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "yakima",
+      "host": "http://yakima.craigslist.org",
+      "state": "Washington"
+    },
+    {
+      "title": "charleston ",
+      "host": "http://charlestonwv.craigslist.org",
+      "state": "West Virginia"
+    },
+    {
+      "title": "eastern panhandle",
+      "host": "http://martinsburg.craigslist.org",
+      "state": "West Virginia"
+    },
+    {
+      "title": "huntington-ashland",
+      "host": "http://huntington.craigslist.org",
+      "state": "West Virginia"
+    },
+    {
+      "title": "morgantown",
+      "host": "http://morgantown.craigslist.org",
+      "state": "West Virginia"
+    },
+    {
+      "title": "northern panhandle",
+      "host": "http://wheeling.craigslist.org",
+      "state": "West Virginia"
+    },
+    {
+      "title": "parkersburg-marietta",
+      "host": "http://parkersburg.craigslist.org",
+      "state": "West Virginia"
+    },
+    {
+      "title": "southern WV",
+      "host": "http://swv.craigslist.org",
+      "state": "West Virginia"
+    },
+    {
+      "title": "west virginia (old)",
+      "host": "http://wv.craigslist.org",
+      "state": "West Virginia"
+    },
+    {
+      "title": "appleton-oshkosh-FDL",
+      "host": "http://appleton.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "eau claire",
+      "host": "http://eauclaire.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "green bay",
+      "host": "http://greenbay.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "janesville",
+      "host": "http://janesville.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "kenosha-racine",
+      "host": "http://racine.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "la crosse",
+      "host": "http://lacrosse.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "madison",
+      "host": "http://madison.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "milwaukee",
+      "host": "http://milwaukee.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "northern WI",
+      "host": "http://northernwi.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "sheboygan",
+      "host": "http://sheboygan.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "wausau",
+      "host": "http://wausau.craigslist.org",
+      "state": "Wisconsin"
+    },
+    {
+      "title": "wyoming",
+      "host": "http://wyoming.craigslist.org",
+      "state": "Wyoming"
+    },
+    {
+      "title": "guam-micronesia",
+      "host": "http://micronesia.craigslist.org",
+      "state": "Territories"
+    },
+    {
+      "title": "puerto rico",
+      "host": "http://puertorico.craigslist.org",
+      "state": "Territories"
+    },
+    {
+      "title": "U.S. virgin islands",
+      "host": "http://virgin.craigslist.org",
+      "state": "Territories"
+    },
+    {
+      "title": "calgary",
+      "host": "http://calgary.craigslist.ca",
+      "state": "Alberta"
+    },
+    {
+      "title": "edmonton",
+      "host": "http://edmonton.craigslist.ca",
+      "state": "Alberta"
+    },
+    {
+      "title": "ft mcmurray",
+      "host": "http://ftmcmurray.craigslist.ca",
+      "state": "Alberta"
+    },
+    {
+      "title": "lethbridge",
+      "host": "http://lethbridge.craigslist.ca",
+      "state": "Alberta"
+    },
+    {
+      "title": "medicine hat",
+      "host": "http://hat.craigslist.ca",
+      "state": "Alberta"
+    },
+    {
+      "title": "peace river country",
+      "host": "http://peace.craigslist.ca",
+      "state": "Alberta"
+    },
+    {
+      "title": "red deer",
+      "host": "http://reddeer.craigslist.ca",
+      "state": "Alberta"
+    },
+    {
+      "title": "cariboo",
+      "host": "http://cariboo.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "comox valley",
+      "host": "http://comoxvalley.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "fraser valley",
+      "host": "http://abbotsford.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "kamloops",
+      "host": "http://kamloops.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "kelowna / okanagan",
+      "host": "http://kelowna.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "kootenays",
+      "host": "http://cranbrook.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "nanaimo",
+      "host": "http://nanaimo.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "prince george",
+      "host": "http://princegeorge.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "skeena-bulkley",
+      "host": "http://skeena.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "sunshine coast",
+      "host": "http://sunshine.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "vancouver",
+      "host": "http://vancouver.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "victoria",
+      "host": "http://victoria.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "whistler",
+      "host": "http://whistler.craigslist.ca",
+      "state": "British Columbia"
+    },
+    {
+      "title": "winnipeg",
+      "host": "http://winnipeg.craigslist.ca",
+      "state": "Manitoba"
+    },
+    {
+      "title": "new brunswick",
+      "host": "http://newbrunswick.craigslist.ca",
+      "state": "New Brunswick"
+    },
+    {
+      "title": "st john's",
+      "host": "http://newfoundland.craigslist.ca",
+      "state": "Newfoundland and Labrador"
+    },
+    {
+      "title": "territories",
+      "host": "http://territories.craigslist.ca",
+      "state": "Northwest Territories"
+    },
+    {
+      "title": "yellowknife",
+      "host": "http://yellowknife.craigslist.ca",
+      "state": "Northwest Territories"
+    },
+    {
+      "title": "halifax",
+      "host": "http://halifax.craigslist.ca",
+      "state": "Nova Scotia"
+    },
+    {
+      "title": "barrie",
+      "host": "http://barrie.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "belleville",
+      "host": "http://belleville.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "brantford-woodstock",
+      "host": "http://brantford.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "chatham-kent",
+      "host": "http://chatham.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "cornwall",
+      "host": "http://cornwall.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "guelph",
+      "host": "http://guelph.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "hamilton-burlington",
+      "host": "http://hamilton.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "kingston",
+      "host": "http://kingston.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "kitchener-waterloo-cambridge",
+      "host": "http://kitchener.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "london ",
+      "host": "http://londonon.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "niagara region",
+      "host": "http://niagara.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "ottawa-hull-gatineau",
+      "host": "http://ottawa.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "owen sound",
+      "host": "http://owensound.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "peterborough",
+      "host": "http://peterborough.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "sarnia",
+      "host": "http://sarnia.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "sault ste marie",
+      "host": "http://soo.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "sudbury",
+      "host": "http://sudbury.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "thunder bay",
+      "host": "http://thunderbay.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "toronto",
+      "host": "http://toronto.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "windsor",
+      "host": "http://windsor.craigslist.ca",
+      "state": "Ontario"
+    },
+    {
+      "title": "prince edward island",
+      "host": "http://pei.craigslist.ca",
+      "state": "Prince Edward Island"
+    },
+    {
+      "title": "montreal",
+      "host": "http://montreal.craigslist.ca",
+      "state": "Quebec"
+    },
+    {
+      "title": "quebec city",
+      "host": "http://quebec.craigslist.ca",
+      "state": "Quebec"
+    },
+    {
+      "title": "saguenay",
+      "host": "http://saguenay.craigslist.ca",
+      "state": "Quebec"
+    },
+    {
+      "title": "sherbrooke",
+      "host": "http://sherbrooke.craigslist.ca",
+      "state": "Quebec"
+    },
+    {
+      "title": "trois-rivieres",
+      "host": "http://troisrivieres.craigslist.ca",
+      "state": "Quebec"
+    },
+    {
+      "title": "regina",
+      "host": "http://regina.craigslist.ca",
+      "state": "Saskatchewan"
+    },
+    {
+      "title": "saskatoon",
+      "host": "http://saskatoon.craigslist.ca",
+      "state": "Saskatchewan"
+    },
+    {
+      "title": "whitehorse",
+      "host": "http://whitehorse.craigslist.ca",
+      "state": "Yukon Territory"
+    },
+    {
+      "title": "vienna",
+      "host": "http://vienna.craigslist.at",
+      "state": "Austria"
+    },
+    {
+      "title": "belgium",
+      "host": "http://brussels.craigslist.org",
+      "state": "Belgium"
+    },
+    {
+      "title": "bulgaria",
+      "host": "http://bulgaria.craigslist.org",
+      "state": "Bulgaria"
+    },
+    {
+      "title": "croatia",
+      "host": "http://zagreb.craigslist.org",
+      "state": "Croatia"
+    },
+    {
+      "title": "prague",
+      "host": "http://prague.craigslist.cz",
+      "state": "Czech Republic"
+    },
+    {
+      "title": "copenhagen",
+      "host": "http://copenhagen.craigslist.org",
+      "state": "Denmark"
+    },
+    {
+      "title": "finland",
+      "host": "http://helsinki.craigslist.fi",
+      "state": "Finland"
+    },
+    {
+      "title": "bordeaux",
+      "host": "http://bordeaux.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "brittany",
+      "host": "http://rennes.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "grenoble",
+      "host": "http://grenoble.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "lille",
+      "host": "http://lille.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "loire valley",
+      "host": "http://loire.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "lyon",
+      "host": "http://lyon.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "marseille",
+      "host": "http://marseilles.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "montpellier",
+      "host": "http://montpellier.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "nice / cote d'azur",
+      "host": "http://cotedazur.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "normandy",
+      "host": "http://rouen.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "paris",
+      "host": "http://paris.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "strasbourg",
+      "host": "http://strasbourg.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "toulouse",
+      "host": "http://toulouse.craigslist.org",
+      "state": "France"
+    },
+    {
+      "title": "berlin",
+      "host": "http://berlin.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "bremen",
+      "host": "http://bremen.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "cologne",
+      "host": "http://cologne.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "dresden",
+      "host": "http://dresden.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "dusseldorf",
+      "host": "http://dusseldorf.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "essen / ruhr",
+      "host": "http://essen.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "frankfurt",
+      "host": "http://frankfurt.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "hamburg",
+      "host": "http://hamburg.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "hannover",
+      "host": "http://hannover.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "heidelberg",
+      "host": "http://heidelberg.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "kaiserslautern",
+      "host": "http://kaiserslautern.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "leipzig",
+      "host": "http://leipzig.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "munich",
+      "host": "http://munich.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "nuremberg",
+      "host": "http://nuremberg.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "stuttgart",
+      "host": "http://stuttgart.craigslist.de",
+      "state": "Germany"
+    },
+    {
+      "title": "greece",
+      "host": "http://athens.craigslist.gr",
+      "state": "Greece"
+    },
+    {
+      "title": "budapest",
+      "host": "http://budapest.craigslist.org",
+      "state": "Hungary"
+    },
+    {
+      "title": "reykjavik",
+      "host": "http://reykjavik.craigslist.org",
+      "state": "Iceland"
+    },
+    {
+      "title": "dublin",
+      "host": "http://dublin.craigslist.org",
+      "state": "Ireland"
+    },
+    {
+      "title": "bologna",
+      "host": "http://bologna.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "florence / tuscany",
+      "host": "http://florence.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "genoa",
+      "host": "http://genoa.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "milan",
+      "host": "http://milan.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "napoli / campania",
+      "host": "http://naples.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "perugia",
+      "host": "http://perugia.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "rome",
+      "host": "http://rome.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "sardinia",
+      "host": "http://sardinia.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "sicilia",
+      "host": "http://sicily.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "torino",
+      "host": "http://torino.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "venice / veneto",
+      "host": "http://venice.craigslist.it",
+      "state": "Italy"
+    },
+    {
+      "title": "luxembourg",
+      "host": "http://luxembourg.craigslist.org",
+      "state": "Luxembourg"
+    },
+    {
+      "title": "amsterdam / randstad",
+      "host": "http://amsterdam.craigslist.org",
+      "state": "Netherlands"
+    },
+    {
+      "title": "norway",
+      "host": "http://oslo.craigslist.org",
+      "state": "Norway"
+    },
+    {
+      "title": "poland",
+      "host": "http://warsaw.craigslist.pl",
+      "state": "Poland"
+    },
+    {
+      "title": "faro / algarve",
+      "host": "http://faro.craigslist.pt",
+      "state": "Portugal"
+    },
+    {
+      "title": "lisbon",
+      "host": "http://lisbon.craigslist.pt",
+      "state": "Portugal"
+    },
+    {
+      "title": "porto",
+      "host": "http://porto.craigslist.pt",
+      "state": "Portugal"
+    },
+    {
+      "title": "romania",
+      "host": "http://bucharest.craigslist.org",
+      "state": "Romania"
+    },
+    {
+      "title": "moscow",
+      "host": "http://moscow.craigslist.org",
+      "state": "Russian Federation"
+    },
+    {
+      "title": "st petersburg",
+      "host": "http://stpetersburg.craigslist.org",
+      "state": "Russian Federation"
+    },
+    {
+      "title": "alicante",
+      "host": "http://alicante.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "baleares",
+      "host": "http://baleares.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "barcelona",
+      "host": "http://barcelona.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "bilbao",
+      "host": "http://bilbao.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "cadiz",
+      "host": "http://cadiz.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "canarias",
+      "host": "http://canarias.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "granada",
+      "host": "http://granada.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "madrid",
+      "host": "http://madrid.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "malaga",
+      "host": "http://malaga.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "sevilla",
+      "host": "http://sevilla.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "valencia",
+      "host": "http://valencia.craigslist.es",
+      "state": "Spain"
+    },
+    {
+      "title": "sweden",
+      "host": "http://stockholm.craigslist.se",
+      "state": "Sweden"
+    },
+    {
+      "title": "basel",
+      "host": "http://basel.craigslist.ch",
+      "state": "Switzerland"
+    },
+    {
+      "title": "bern",
+      "host": "http://bern.craigslist.ch",
+      "state": "Switzerland"
+    },
+    {
+      "title": "geneva",
+      "host": "http://geneva.craigslist.ch",
+      "state": "Switzerland"
+    },
+    {
+      "title": "lausanne",
+      "host": "http://lausanne.craigslist.ch",
+      "state": "Switzerland"
+    },
+    {
+      "title": "zurich",
+      "host": "http://zurich.craigslist.ch",
+      "state": "Switzerland"
+    },
+    {
+      "title": "turkey",
+      "host": "http://istanbul.craigslist.com.tr",
+      "state": "Turkey"
+    },
+    {
+      "title": "ukraine",
+      "host": "http://ukraine.craigslist.org",
+      "state": "Ukraine"
+    },
+    {
+      "title": "aberdeen",
+      "host": "http://aberdeen.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "bath",
+      "host": "http://bath.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "belfast",
+      "host": "http://belfast.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "birmingham / west mids",
+      "host": "http://birmingham.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "brighton",
+      "host": "http://brighton.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "bristol",
+      "host": "http://bristol.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "cambridge, UK",
+      "host": "http://cambridge.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "cardiff / wales",
+      "host": "http://cardiff.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "coventry",
+      "host": "http://coventry.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "derby",
+      "host": "http://derby.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "devon & cornwall",
+      "host": "http://devon.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "dundee",
+      "host": "http://dundee.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "east anglia",
+      "host": "http://norwich.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "east midlands",
+      "host": "http://eastmids.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "edinburgh",
+      "host": "http://edinburgh.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "essex",
+      "host": "http://essex.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "glasgow",
+      "host": "http://glasgow.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "hampshire",
+      "host": "http://hampshire.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "kent",
+      "host": "http://kent.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "leeds",
+      "host": "http://leeds.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "liverpool",
+      "host": "http://liverpool.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "london",
+      "host": "http://london.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "manchester",
+      "host": "http://manchester.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "newcastle / NE england",
+      "host": "http://newcastle.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "nottingham",
+      "host": "http://nottingham.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "oxford",
+      "host": "http://oxford.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "sheffield",
+      "host": "http://sheffield.craigslist.co.uk",
+      "state": "United Kingdom"
+    },
+    {
+      "title": "bangladesh",
+      "host": "http://bangladesh.craigslist.org",
+      "state": "Bangladesh"
+    },
+    {
+      "title": "beijing",
+      "host": "http://beijing.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "chengdu",
+      "host": "http://chengdu.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "chongqing",
+      "host": "http://chongqing.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "dalian",
+      "host": "http://dalian.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "guangzhou",
+      "host": "http://guangzhou.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "hangzhou",
+      "host": "http://hangzhou.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "nanjing",
+      "host": "http://nanjing.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "shanghai",
+      "host": "http://shanghai.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "shenyang",
+      "host": "http://shenyang.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "shenzhen",
+      "host": "http://shenzhen.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "wuhan",
+      "host": "http://wuhan.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "xi'an",
+      "host": "http://xian.craigslist.com.cn",
+      "state": "China"
+    },
+    {
+      "title": "guam-micronesia",
+      "host": "http://micronesia.craigslist.org",
+      "state": "Guam / Micronesia"
+    },
+    {
+      "title": "hong kong",
+      "host": "http://hongkong.craigslist.hk",
+      "state": "Hong Kong"
+    },
+    {
+      "title": "ahmedabad",
+      "host": "http://ahmedabad.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "bangalore",
+      "host": "http://bangalore.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "bhubaneswar",
+      "host": "http://bhubaneswar.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "chandigarh",
+      "host": "http://chandigarh.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "chennai (madras)",
+      "host": "http://chennai.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "delhi",
+      "host": "http://delhi.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "goa",
+      "host": "http://goa.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "hyderabad",
+      "host": "http://hyderabad.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "indore",
+      "host": "http://indore.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "jaipur",
+      "host": "http://jaipur.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "kerala",
+      "host": "http://kerala.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "kolkata (calcutta)",
+      "host": "http://kolkata.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "lucknow",
+      "host": "http://lucknow.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "mumbai",
+      "host": "http://mumbai.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "pune",
+      "host": "http://pune.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "surat surat",
+      "host": "http://surat.craigslist.co.in",
+      "state": "India"
+    },
+    {
+      "title": "indonesia",
+      "host": "http://jakarta.craigslist.org",
+      "state": "Indonesia"
+    },
+    {
+      "title": "iran",
+      "host": "http://tehran.craigslist.org",
+      "state": "Iran"
+    },
+    {
+      "title": "iraq",
+      "host": "http://baghdad.craigslist.org",
+      "state": "Iraq"
+    },
+    {
+      "title": "haifa",
+      "host": "http://haifa.craigslist.org",
+      "state": "Israel and Palestine"
+    },
+    {
+      "title": "jerusalem",
+      "host": "http://jerusalem.craigslist.org",
+      "state": "Israel and Palestine"
+    },
+    {
+      "title": "tel aviv",
+      "host": "http://telaviv.craigslist.org",
+      "state": "Israel and Palestine"
+    },
+    {
+      "title": "west bank",
+      "host": "http://ramallah.craigslist.org",
+      "state": "Israel and Palestine"
+    },
+    {
+      "title": "fukuoka",
+      "host": "http://fukuoka.craigslist.jp",
+      "state": "Japan"
+    },
+    {
+      "title": "hiroshima",
+      "host": "http://hiroshima.craigslist.jp",
+      "state": "Japan"
+    },
+    {
+      "title": "nagoya",
+      "host": "http://nagoya.craigslist.jp",
+      "state": "Japan"
+    },
+    {
+      "title": "okinawa",
+      "host": "http://okinawa.craigslist.jp",
+      "state": "Japan"
+    },
+    {
+      "title": "osaka-kobe-kyoto",
+      "host": "http://osaka.craigslist.jp",
+      "state": "Japan"
+    },
+    {
+      "title": "sapporo",
+      "host": "http://sapporo.craigslist.jp",
+      "state": "Japan"
+    },
+    {
+      "title": "sendai",
+      "host": "http://sendai.craigslist.jp",
+      "state": "Japan"
+    },
+    {
+      "title": "tokyo",
+      "host": "http://tokyo.craigslist.jp",
+      "state": "Japan"
+    },
+    {
+      "title": "seoul",
+      "host": "http://seoul.craigslist.co.kr",
+      "state": "Korea"
+    },
+    {
+      "title": "kuwait",
+      "host": "http://kuwait.craigslist.org",
+      "state": "Kuwait"
+    },
+    {
+      "title": "beirut, lebanon",
+      "host": "http://beirut.craigslist.org",
+      "state": "Lebanon"
+    },
+    {
+      "title": "malaysia",
+      "host": "http://malaysia.craigslist.org",
+      "state": "Malaysia"
+    },
+    {
+      "title": "pakistan",
+      "host": "http://pakistan.craigslist.org",
+      "state": "Pakistan"
+    },
+    {
+      "title": "bacolod",
+      "host": "http://bacolod.craigslist.com.ph",
+      "state": "Philippines"
+    },
+    {
+      "title": "bicol region",
+      "host": "http://naga.craigslist.com.ph",
+      "state": "Philippines"
+    },
+    {
+      "title": "cagayan de oro",
+      "host": "http://cdo.craigslist.com.ph",
+      "state": "Philippines"
+    },
+    {
+      "title": "cebu",
+      "host": "http://cebu.craigslist.com.ph",
+      "state": "Philippines"
+    },
+    {
+      "title": "davao city",
+      "host": "http://davaocity.craigslist.com.ph",
+      "state": "Philippines"
+    },
+    {
+      "title": "iloilo",
+      "host": "http://iloilo.craigslist.com.ph",
+      "state": "Philippines"
+    },
+    {
+      "title": "manila",
+      "host": "http://manila.craigslist.com.ph",
+      "state": "Philippines"
+    },
+    {
+      "title": "pampanga",
+      "host": "http://pampanga.craigslist.com.ph",
+      "state": "Philippines"
+    },
+    {
+      "title": "zamboanga",
+      "host": "http://zamboanga.craigslist.com.ph",
+      "state": "Philippines"
+    },
+    {
+      "title": "singapore",
+      "host": "http://singapore.craigslist.com.sg",
+      "state": "Singapore"
+    },
+    {
+      "title": "taiwan",
+      "host": "http://taipei.craigslist.com.tw",
+      "state": "Taiwan"
+    },
+    {
+      "title": "thailand",
+      "host": "http://bangkok.craigslist.co.th",
+      "state": "Thailand"
+    },
+    {
+      "title": "united arab emirates",
+      "host": "http://dubai.craigslist.org",
+      "state": "United Arab Emirates"
+    },
+    {
+      "title": "vietnam",
+      "host": "http://vietnam.craigslist.org",
+      "state": "Vietnam"
+    },
+    {
+      "title": "adelaide",
+      "host": "http://adelaide.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "brisbane",
+      "host": "http://brisbane.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "cairns",
+      "host": "http://cairns.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "canberra",
+      "host": "http://canberra.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "darwin",
+      "host": "http://darwin.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "gold coast",
+      "host": "http://goldcoast.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "melbourne",
+      "host": "http://melbourne.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "newcastle, NSW",
+      "host": "http://ntl.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "perth",
+      "host": "http://perth.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "sydney",
+      "host": "http://sydney.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "tasmania",
+      "host": "http://hobart.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "wollongong",
+      "host": "http://wollongong.craigslist.com.au",
+      "state": "Australia"
+    },
+    {
+      "title": "auckland",
+      "host": "http://auckland.craigslist.org",
+      "state": "New Zealand"
+    },
+    {
+      "title": "christchurch",
+      "host": "http://christchurch.craigslist.org",
+      "state": "New Zealand"
+    },
+    {
+      "title": "dunedin",
+      "host": "http://dunedin.craigslist.co.nz",
+      "state": "New Zealand"
+    },
+    {
+      "title": "wellington",
+      "host": "http://wellington.craigslist.org",
+      "state": "New Zealand"
+    },
+    {
+      "title": "buenos aires",
+      "host": "http://buenosaires.craigslist.org",
+      "state": "Argentina"
+    },
+    {
+      "title": "bolivia",
+      "host": "http://lapaz.craigslist.org",
+      "state": "Bolivia"
+    },
+    {
+      "title": "belo horizonte",
+      "host": "http://belohorizonte.craigslist.org",
+      "state": "Brazil"
+    },
+    {
+      "title": "brasilia",
+      "host": "http://brasilia.craigslist.org",
+      "state": "Brazil"
+    },
+    {
+      "title": "curitiba",
+      "host": "http://curitiba.craigslist.org",
+      "state": "Brazil"
+    },
+    {
+      "title": "fortaleza",
+      "host": "http://fortaleza.craigslist.org",
+      "state": "Brazil"
+    },
+    {
+      "title": "porto alegre",
+      "host": "http://portoalegre.craigslist.org",
+      "state": "Brazil"
+    },
+    {
+      "title": "recife",
+      "host": "http://recife.craigslist.org",
+      "state": "Brazil"
+    },
+    {
+      "title": "rio de janeiro",
+      "host": "http://rio.craigslist.org",
+      "state": "Brazil"
+    },
+    {
+      "title": "salvador, bahia",
+      "host": "http://salvador.craigslist.org",
+      "state": "Brazil"
+    },
+    {
+      "title": "sao paulo",
+      "host": "http://saopaulo.craigslist.org",
+      "state": "Brazil"
+    },
+    {
+      "title": "caribbean islands",
+      "host": "http://caribbean.craigslist.org",
+      "state": "Caribbean Islands"
+    },
+    {
+      "title": "chile",
+      "host": "http://santiago.craigslist.org",
+      "state": "Chile"
+    },
+    {
+      "title": "colombia",
+      "host": "http://colombia.craigslist.org",
+      "state": "Colombia"
+    },
+    {
+      "title": "costa rica",
+      "host": "http://costarica.craigslist.org",
+      "state": "Costa Rica"
+    },
+    {
+      "title": "dominican republic",
+      "host": "http://santodomingo.craigslist.org",
+      "state": "Dominican Republic"
+    },
+    {
+      "title": "ecuador",
+      "host": "http://quito.craigslist.org",
+      "state": "Ecuador"
+    },
+    {
+      "title": "el salvador",
+      "host": "http://elsalvador.craigslist.org",
+      "state": "El Salvador"
+    },
+    {
+      "title": "guatemala",
+      "host": "http://guatemala.craigslist.org",
+      "state": "Guatemala"
+    },
+    {
+      "title": "acapulco",
+      "host": "http://acapulco.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "baja california sur",
+      "host": "http://bajasur.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "chihuahua",
+      "host": "http://chihuahua.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "ciudad juarez",
+      "host": "http://juarez.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "guadalajara",
+      "host": "http://guadalajara.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "guanajuato",
+      "host": "http://guanajuato.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "hermosillo",
+      "host": "http://hermosillo.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "mazatlan",
+      "host": "http://mazatlan.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "mexico city",
+      "host": "http://mexicocity.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "monterrey",
+      "host": "http://monterrey.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "oaxaca",
+      "host": "http://oaxaca.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "puebla",
+      "host": "http://puebla.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "puerto vallarta",
+      "host": "http://pv.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "tijuana",
+      "host": "http://tijuana.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "veracruz",
+      "host": "http://veracruz.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "yucatan",
+      "host": "http://yucatan.craigslist.com.mx",
+      "state": "Mexico"
+    },
+    {
+      "title": "nicaragua",
+      "host": "http://managua.craigslist.org",
+      "state": "Nicaragua"
+    },
+    {
+      "title": "panama",
+      "host": "http://panama.craigslist.org",
+      "state": "Panama"
+    },
+    {
+      "title": "peru",
+      "host": "http://lima.craigslist.org",
+      "state": "Peru"
+    },
+    {
+      "title": "puerto rico",
+      "host": "http://puertorico.craigslist.org",
+      "state": "Puerto Rico"
+    },
+    {
+      "title": "montevideo",
+      "host": "http://montevideo.craigslist.org",
+      "state": "Uruguay"
+    },
+    {
+      "title": "venezuela",
+      "host": "http://caracas.craigslist.org",
+      "state": "Venezuela"
+    },
+    {
+      "title": "virgin islands",
+      "host": "http://virgin.craigslist.org",
+      "state": "Virgin Islands, U.S."
+    },
+    {
+      "title": "egypt",
+      "host": "http://cairo.craigslist.org",
+      "state": "Egypt"
+    },
+    {
+      "title": "ethiopia",
+      "host": "http://addisababa.craigslist.org",
+      "state": "Ethiopia"
+    },
+    {
+      "title": "ghana",
+      "host": "http://accra.craigslist.org",
+      "state": "Ghana"
+    },
+    {
+      "title": "kenya",
+      "host": "http://kenya.craigslist.org",
+      "state": "Kenya"
+    },
+    {
+      "title": "morocco",
+      "host": "http://casablanca.craigslist.org",
+      "state": "Morocco"
+    },
+    {
+      "title": "cape town",
+      "host": "http://capetown.craigslist.co.za",
+      "state": "South Africa"
+    },
+    {
+      "title": "durban",
+      "host": "http://durban.craigslist.co.za",
+      "state": "South Africa"
+    },
+    {
+      "title": "johannesburg",
+      "host": "http://johannesburg.craigslist.co.za",
+      "state": "South Africa"
+    },
+    {
+      "title": "pretoria",
+      "host": "http://pretoria.craigslist.co.za",
+      "state": "South Africa"
+    },
+    {
+      "title": "tunisia",
+      "host": "http://tunis.craigslist.org",
+      "state": "Tunisia"
+    }
+  ]
+}

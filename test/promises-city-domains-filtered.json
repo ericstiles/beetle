@@ -1,0 +1,47 @@
+[
+  {
+    "title": "auburn",
+    "host": "http://auburn.craigslist.org",
+    "state": "Alabama"
+  },
+  {
+    "title": "birmingham",
+    "host": "http://bham.craigslist.org",
+    "state": "Alabama"
+  },
+  {
+    "title": "dothan",
+    "host": "http://dothan.craigslist.org",
+    "state": "Alabama"
+  },
+  {
+    "title": "florence / muscle shoals",
+    "host": "http://shoals.craigslist.org",
+    "state": "Alabama"
+  },
+  {
+    "title": "gadsden-anniston",
+    "host": "http://gadsden.craigslist.org",
+    "state": "Alabama"
+  },
+  {
+    "title": "huntsville / decatur",
+    "host": "http://huntsville.craigslist.org",
+    "state": "Alabama"
+  },
+  {
+    "title": "mobile",
+    "host": "http://mobile.craigslist.org",
+    "state": "Alabama"
+  },
+  {
+    "title": "montgomery",
+    "host": "http://montgomery.craigslist.org",
+    "state": "Alabama"
+  },
+  {
+    "title": "tuscaloosa",
+    "host": "http://tuscaloosa.craigslist.org",
+    "state": "Alabama"
+  }
+]
