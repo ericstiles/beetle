@@ -36,6 +36,16 @@ function(value) {
 },
 ```
 
+### From the Command Line
+Using Grunts format command line arguments can be passed to the application.  Currently only the file name that the html is written to can be set.  See the following example
+```
+#Default
+grunt update
+
+#Setting file where ads can be stored
+grunt update:-filname=georgia-ads.html
+```
+
 ###Example Predicates
 Grouping on cities
 ```js

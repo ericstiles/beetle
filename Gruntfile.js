@@ -18,7 +18,8 @@ module.exports = function(grunt) {
         protractor: 'grunt-protractor-runner',
         injector: 'grunt-asset-injector',
         buildcontrol: 'grunt-build-control',
-        gexecute: 'grunt-execute'
+        execute: 'grunt-execute'
+        // ,gexecute: 'grunt-execute'
     });
 
     // Time how long tasks take. Can help when optimizing build times
@@ -490,6 +491,12 @@ module.exports = function(grunt) {
             target: {
                 src: ['./index.js']
             }
+        },
+
+        testargs: {
+            target: {
+                src: ['./test.js']
+            }
         }
     });
 
@@ -545,15 +552,23 @@ module.exports = function(grunt) {
         grunt.task.run(['serve']);
     });
 
-    grunt.registerTask('update', function(target) {
-        // if (target === 'server') {
-            console.log('update craigslist search');
-            return grunt.task.run([
-                'env:all',
-                'env:prod',
-                'execute'
-            ]);
-        // }
+    grunt.registerTask('search', function(target) {
+        console.log('complete craigslist search');
+        return grunt.task.run([
+            'env:all',
+            'env:prod',
+            'execute'
+        ]);
+    });
+
+    grunt.registerTask('modsearch', function() {
+        console.log(arguments);
+        grunt.config('execute.options', {
+            args: JSON.stringify(arguments)
+        })
+        return grunt.task.run([
+            'search'
+        ]);
     });
 
     grunt.registerTask('test', function(target) {
