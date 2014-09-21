@@ -10,6 +10,7 @@ var http = require('q-io/http'),
     select = require('xpath.js'),
     dom = require('xmldom').DOMParser,
     CONFIG = require('config'),
+    moment = require('moment'),
     Q = require('q');
 // ,logger = require('./lib/logger.js')(process.env.LOG_LEVEL);
 
@@ -310,6 +311,7 @@ var domOptions = {
      */
     cl.writeFile = function(options) {
         //CHECK OPTIONS
+        console.log(options.filepath);
         fse.ensureFile(options.filepath, function(error) {
             if (error) {
                 error.message = "Error confirming html file exists:" + error.message;
@@ -348,7 +350,10 @@ var domOptions = {
         htmlPage += '.back-to-top2{ position:fixed; top:2%; right:2%; }';
         htmlPage += '</style>';
         htmlPage += '</header><body>';
+        htmlPage += 'Page created on: ' + cl.creationDate() + '<br><br><hr><br><br>';
         htmlPage += cl.topMenu(adArray);
+        // htmlPage += '<br>'
+
         var colOrder = ['i', 'a', 'price', 'location', 'city', 'date', 'picture', 'map'];
         _.each(_.uniq(_.pluck(adArray, 'state')), function(state, index) {
             htmlPage += '<h1><a name=\'' + cl.linkify(state) + '\'>' + state + '</a></h1>';
@@ -396,6 +401,12 @@ var domOptions = {
         _.each(_.uniq(_.pluck(adArray, 'state')), function(state, index) {
             htmlPage += '<a href=\'#' + cl.linkify(state) + '\'>' + state + '&nbsp;</a>'
         });
+        return htmlPage;
+    }
+    cl.creationDate = function(){
+        var htmlPage = '';
+        var now = moment().format('YYYY-MM-DD hh:mm A');
+        htmlPage += now;
         return htmlPage;
     }
     /**

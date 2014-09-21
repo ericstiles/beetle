@@ -5,35 +5,10 @@ var _ = require('underscore'),
     fse = require('fs-extra'),
     Q = require('q'),
     _ = require('underscore'),
+    utils = require('./server/components/utils/index.js'),
     cl = require('./server/components/craigslist/index.js');
 
-// Arguments
-// - search string
-// - filename (done)
-// - filePath
-// - states and/or cities
-
-var processArgs = function(string) {
-    var args = JSON.parse(process.argv[process.argv.length - 1]);
-    var args2 = _.values(args);
-    var fileNameArray = _.filter(args, function(element) {
-        return element.indexOf('-filename') != 1;
-    });
-    var fileName = fileNameArray.length > 0 ?
-        fileNameArray[0].slice(fileNameArray[0].indexOf("=") + 1) :
-        CONFIG.HTML_FILE;
-    return {
-        fileName: fileName,
-        filePath: path.resolve(__dirname + "/" + CONFIG.STORAGE)
-    };
-
-};
-
-var programOptions = processArgs(process.argv[process.argv.length - 1]);
-
-console.log(programOptions);
-
-// process.exit(0);
+var programOptions = utils.processArgs(process.argv[process.argv.length - 1]);
 
 var options = {
     hostname: cl.parseHostName(CONFIG.URL_SITES),
@@ -89,8 +64,9 @@ cl.getHTTPRequest(options)
         })
     .then(function(success, error) {
             //NOT A PROMISE.  NEEDS TO BE WRAPPED
+            console.log(success);
             cl.writeFile({
-                filepath: path.resolve(programOptions.filePath, programOptions.fileName),
+                filepath: path.resolve(programOptions.filepath, programOptions.filename),
                 contents: success
             })
                 .then(function(success, error) {
@@ -99,7 +75,7 @@ cl.getHTTPRequest(options)
                     if (error) {
                         throw (error);
                     }
-                    console.log('file location:' + path.resolve(programOptions.filePath, programOptions.fileName));
+                    console.log('file location:' + path.resolve(programOptions.filepath, programOptions.filename));
                     return "success";
                 });
         },

@@ -1,6 +1,6 @@
 {
   "name": "craigslist-beetle",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "server/app.js",
   "dependencies": {
     "body-parser": "~1.0.0",
@@ -16,6 +16,7 @@
     "fs-extra": "^0.11.0",
     "lodash": "~2.4.1",
     "method-override": "~1.0.0",
+    "moment": "^2.8.3",
     "morgan": "~1.0.0",
     "node-fs-extra": "^0.8.1",
     "q": "^1.0.1",
