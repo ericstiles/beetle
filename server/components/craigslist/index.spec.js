@@ -11,6 +11,7 @@ var should = require('should'),
     http = require('q-io/http'),
     Q = require('q'),
     _ = require('underscore'),
+    utils = require('../utils/index.js'),
     CONFIG = require("config");
 
 var testSuccessUrl, testFailUrl;
@@ -36,101 +37,13 @@ beforeEach(function() {
 });
 
 describe('Test SPEC for craigslist sites html page', function() {
-    it('should parse host name without protocol from given url', function(done) {
-        (cl.parseHostName(testSuccessUrl)).should.eql('www.craigslist.org');
-        (cl.parseHostName(cl.parseHostName(testSuccessUrl + "/sites"))).should.eql('www.craigslist.org');
-        (_.isUndefined(cl.parseHostName(undefined))).should.be.true;
-        (cl.parseHostName(null) === null).should.be.true;
-        (cl.parseHostName('')).should.eql('');
-        done();
-    });
-    it('should parse path from given url', function(done) {
-        (cl.parsePathName('http://www.somedomain.com/account/search?filter=a#top')).should.be.a.String.and.equal('/account/search');
-        (cl.parsePathName(testSuccessUrl)).should.eql('/about/sites');
-        (_.isNull(cl.parsePathName(cl.parseHostName(testSuccessUrl)))).should.be.true;
-        done();
-    });
-    it('should respond with a 200 status code and html page', function(done) {
-        var options = {
-            hostname: cl.parseHostName(testSuccessUrl),
-            path: cl.parsePathName(testSuccessUrl),
-            method: 'GET'
-        };
-
-        var successResponse = function(response) {
-            (response.status).should.eql(200);
-            return response.body.read();
-        };
-        cl.getHTTPRequest(options)
-            .then(successResponse, function(error) {
-                done(e.name + "|" + e.message);
-            })
-            .then(
-                function(body) {
-                    (body.toString("utf-8")).should.be.a.String;
-                    done();
-                },
-                function(error) {
-                    done(e.name + "|" + e.message)
-                });
-    });
-    it('should respond with a 404 status code and html page', function(done) {
-        var options = {
-            hostname: cl.parseHostName(testFailUrl),
-            path: cl.parsePathName(testFailUrl),
-            method: 'GET'
-        };
-        var failedResponse = function(response) {
-            (response.status).should.eql(404);
-            return response.body.read();
-        };
-        cl.getHTTPRequest(options)
-            .then(failedResponse, function(error) {
-                done(e.name + "|" + e.message);
-            })
-            .then(
-                function(body) {
-                    (body.toString("utf-8")).should.be.a.String;
-                    done();
-                },
-                function(error) {
-                    done(e.name + "|" + e.message)
-                });
-    });
-    // it('should write a file to test location', function(done) {
-    //     var options = {
-    //         filepath: path.resolve(__dirname + "/../../../" + CONFIG.STORAGE, CONFIG.WRITE_TXT_FILENAME),
-    //         contents: 'test contents'
-    //     }
-    //     cl.writeFile(options)
-    //     //NEED TO WRAP WITH PROMISE TO VALIDATE SUCCESS
-    //     done();
-    // });
-    // it('should write json to test location', function(done) {
-    //     var options = {
-    //         filepath: path.resolve(__dirname + "/../../../" + CONFIG.STORAGE, CONFIG.WRITE_JSON_FILENAME),
-    //         contents: {
-    //             test: 'contents'
-    //         }
-    //     }
-    //     cl.writeJSON(options)
-    //         .then(
-    //             function(error, success) {
-    //                 if (!_.isUndefined(error) && !_.isNull(error)) {
-    //                     done();
-    //                 } else {
-    //                     done(error);
-    //                 }
-    //             }
-    //     )
-    // });
     it('should parse html page and return array of domains including state of city domain', function(done) {
         var options = {
-            hostname: cl.parseHostName(testSuccessUrl),
-            path: cl.parsePathName(testSuccessUrl),
+            hostname: utils.parseHostName(testSuccessUrl),
+            path: utils.parsePathName(testSuccessUrl),
             method: 'GET'
         };
-        cl.getHTTPRequest(options)
+        utils.getHTTPRequest(options)
             .then(
                 cl.parseSitesHTML,
                 function(error) {
@@ -242,8 +155,6 @@ describe('Test SPEC for craigslist sites html page', function() {
                 done(error);
             })
             .then(function(success, error) {
-                // console.log(success);
-                // console.log(error);
                 return success;
             })
             .then(cl.getAdPagesFromCityDomains,
@@ -251,16 +162,11 @@ describe('Test SPEC for craigslist sites html page', function() {
                     done(error);
                 })
             .then(function(results) {
-                // console.log("Q is now settled");
                 var htmlArray = [];
                 results.forEach(function(result, error) {
                     //  NEED TO TEST TO VALIDATE SUCCESS
-                    // console.log("ERROR:" + error);
-                    // console.log("Results is an Object:" + _.isObject(results));
-                    // console.log("Results is a Promise:" + Q.isPromise(results));
                     if (result.state === 'fulfilled') {
                         // This item was loaded!
-                        // console.log(result.state);
                         htmlArray.push(result.value);
                         // console.log(result.value);
                     } else {
@@ -270,11 +176,6 @@ describe('Test SPEC for craigslist sites html page', function() {
                     }
                 });
                 (htmlArray.length).should.eql(2);
-                // var props = _.keys(htmlArray[0]);
-                // console.log(props);
-                // console.log(htmlArray[0]);
-                // (props).should.eql(4);
-                // (_.keys(htmlArray[0])['html'] !== undefined && _.keys(htmlArray[0])['html'] !== null).should.be.true;
                 done();
             })
     });
@@ -301,7 +202,6 @@ describe('Test SPEC for craigslist sites html page', function() {
                     done(error);
                 })
             .then(function(success, error) {
-                    // console.log("success:" + _.isArray(success));
                     (success.length).should.be.eql(99);
                     //NEED TO TEST RESULTS BY COUNTING ARRAY AND CONFIRMING 
                     //PROPERTIES EXIST IN ALL OF THEM
@@ -318,4 +218,176 @@ describe('Test SPEC for craigslist sites html page', function() {
     it('should write an html page of ads given an array of ads', function(done) {
         done();
     });
+});
+
+describe('Test SPEC for processing cli arguments', function() {
+    it('should process fileName when correctly provided on cli', function(done) {
+
+        var arg_fileName_good_1 = "[{ '0': '-filename=test.html' }]";
+        var arg_fileName_good_2 = "[{ '0': '-filename=test.html', '1': '-filename=test2.html' }]";
+
+        var result = cl.processArgs(eval(arg_fileName_good_1)[0]);
+        result.filename.should.eql('test.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+        var result = cl.processArgs(eval(arg_fileName_good_2)[0]);
+        result.filename.should.eql('test.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+        done();
+    });
+    it('should return default fileName when cli is not correctly provided on cli', function(done) {
+
+        var arg_fileName_bad_1 = "[{ '0': '-filename', }]";
+        var arg_fileName_bad_2 = "[{ '0': '-filename=' }]";
+        var arg_fileName_bad_3 = "[{ '0': '-filenameindex.html' }]";
+        var arg_fileName_bad_4 = "[{ '0': '-filename', '1': '-filename=test.html' }]";
+        var arg_fileName_bad_5 = "[{ '0': '-filename=', '1': '-filename=test.html' }]";
+        var arg_fileName_bad_6 = "[{ '0': '-filenameindex.html', '1': '-filename=test.html' }]";
+
+        var result = cl.processArgs(eval(arg_fileName_bad_1)[0]);
+        result.filename.should.eql('index.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+        result = cl.processArgs(eval(arg_fileName_bad_2)[0]);
+        result.filename.should.eql('index.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+        result = cl.processArgs(eval(arg_fileName_bad_3)[0]);
+        result.filename.should.eql('index.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+        result = cl.processArgs(eval(arg_fileName_bad_4)[0]);
+        result.filename.should.eql('test.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+        done();
+    });
+
+    it('should return provided fileName when a bad value and then a good value are provided on cli', function(done) {
+
+        var arg_fileName_bad_4 = "[{ '0': '-filename', '1': '-filename=test.html' }]";
+        var arg_fileName_bad_5 = "[{ '0': '-filename=', '1': '-filename=test.html' }]";
+        var arg_fileName_bad_6 = "[{ '0': '-filenameindex.html', '1': '-filename=test.html' }]";
+
+        var result = cl.processArgs(eval(arg_fileName_bad_4)[0]);
+        result.filename.should.eql('test.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+        result = cl.processArgs(eval(arg_fileName_bad_5)[0]);
+        result.filename.should.eql('test.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+        result = cl.processArgs(eval(arg_fileName_bad_6)[0]);
+        result.filename.should.eql('test.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+        done();
+    });
+
+    it('should return provided fileName when a good value and then a bad value are provided on cli', function(done) {
+
+        var arg_fileName_bad_4 = "[{'0': '-filename=test.html', '1': '-filename' }]";
+        var arg_fileName_bad_5 = "[{'0': '-filename=test.html', '1': '-filename=' }]";
+        var arg_fileName_bad_6 = "[{'0': '-filename=test.html', '1': '-filenameindex.html' }]";
+
+        var result = cl.processArgs(eval(arg_fileName_bad_4)[0]);
+        result.filename.should.eql('test.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+        result = cl.processArgs(eval(arg_fileName_bad_5)[0]);
+        result.filename.should.eql('test.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+        result = cl.processArgs(eval(arg_fileName_bad_6)[0]);
+        result.filename.should.eql('test.html');
+        result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+        done();
+    });
+    it('should process state(s) when correctly provided on cli', function(done) {
+
+        var arg_fileName_good_1 = "[{ '0': '-states=Texas' }]";
+        var arg_fileName_good_2 = "[{ '0': '-filename=test.html', '1': '-filename=test2.html', '3': '-states=Texas' }]";
+        var arg_fileName_good_3 = "[{ '0': '-states=Texas,Louisiana' }]";
+        var arg_fileName_good_4 = "[{ '0': '-filename=test.html', '1': '-filename=test2.html', '3': '-states=Texas,Louisiana' }]";
+        var result = cl.processArgs(eval(arg_fileName_good_1)[0]);
+        result.states.should.be.instanceof(Array).and.have.lengthOf(1);
+
+        var result = cl.processArgs(eval(arg_fileName_good_2)[0]);
+        result.states.should.be.instanceof(Array).and.have.lengthOf(1);
+
+        result = cl.processArgs(eval(arg_fileName_good_3)[0]);
+        result.states.should.be.instanceof(Array).and.have.lengthOf(2);
+
+        result = cl.processArgs(eval(arg_fileName_good_4)[0]);
+        result.states.should.be.instanceof(Array).and.have.lengthOf(2);
+
+        done();
+    });
+    // it('should return default fileName when cli is not correctly provided on cli', function(done) {
+
+    //     var arg_fileName_bad_1 = "[{ '0': '-filename', }]";
+    //     var arg_fileName_bad_2 = "[{ '0': '-filename=' }]";
+    //     var arg_fileName_bad_3 = "[{ '0': '-filenameindex.html' }]";
+    //     var arg_fileName_bad_4 = "[{ '0': '-filename', '1': '-filename=test.html' }]";
+    //     var arg_fileName_bad_5 = "[{ '0': '-filename=', '1': '-filename=test.html' }]";
+    //     var arg_fileName_bad_6 = "[{ '0': '-filenameindex.html', '1': '-filename=test.html' }]";
+
+    //     var result = cl.processArgs(eval(arg_fileName_bad_1)[0]);
+    //     result.filename.should.eql('index.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+    //     result = cl.processArgs(eval(arg_fileName_bad_2)[0]);
+    //     result.filename.should.eql('index.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+    //     result = cl.processArgs(eval(arg_fileName_bad_3)[0]);
+    //     result.filename.should.eql('index.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+    //     result = cl.processArgs(eval(arg_fileName_bad_4)[0]);
+    //     result.filename.should.eql('test.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+    //     done();
+    // });
+
+    // it('should return provided fileName when a bad value and then a good value are provided on cli', function(done) {
+
+    //     var arg_fileName_bad_4 = "[{ '0': '-filename', '1': '-filename=test.html' }]";
+    //     var arg_fileName_bad_5 = "[{ '0': '-filename=', '1': '-filename=test.html' }]";
+    //     var arg_fileName_bad_6 = "[{ '0': '-filenameindex.html', '1': '-filename=test.html' }]";
+
+    //     var result = cl.processArgs(eval(arg_fileName_bad_4)[0]);
+    //     result.filename.should.eql('test.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+    //     result = cl.processArgs(eval(arg_fileName_bad_5)[0]);
+    //     result.filename.should.eql('test.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+    //     result = cl.processArgs(eval(arg_fileName_bad_6)[0]);
+    //     result.filename.should.eql('test.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+    //     done();
+    // });
+
+    // it('should return provided fileName when a good value and then a bad value are provided on cli', function(done) {
+
+    //     var arg_fileName_bad_4 = "[{'0': '-filename=test.html', '1': '-filename' }]";
+    //     var arg_fileName_bad_5 = "[{'0': '-filename=test.html', '1': '-filename=' }]";
+    //     var arg_fileName_bad_6 = "[{'0': '-filename=test.html', '1': '-filenameindex.html' }]";
+
+    //     var result = cl.processArgs(eval(arg_fileName_bad_4)[0]);
+    //     result.filename.should.eql('test.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+    //     result = cl.processArgs(eval(arg_fileName_bad_5)[0]);
+    //     result.filename.should.eql('test.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+
+    //     result = cl.processArgs(eval(arg_fileName_bad_6)[0]);
+    //     result.filename.should.eql('test.html');
+    //     result.filepath.should.eql(path.resolve(__dirname + "/../../../" + CONFIG.STORAGE))
+    //     done();
+    // });
+
 });

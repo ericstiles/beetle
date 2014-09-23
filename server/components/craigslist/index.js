@@ -3,23 +3,30 @@
 var http = require('q-io/http'),
     _ = require('underscore'),
     xpath = require('xpath.js'),
-    fs = require('fs'),
-    qfs = require('q-io/fs'),
-    fse = require('fs-extra'), //redundant to fs but clear
     path = require('path'),
     select = require('xpath.js'),
     dom = require('xmldom').DOMParser,
     CONFIG = require('config'),
     moment = require('moment'),
+    utils = require('../utils/index.js'),
     Q = require('q');
 // ,logger = require('./lib/logger.js')(process.env.LOG_LEVEL);
 
+/**
+ * Curried function to used to enable logging as needed.  Uses configuration to turn on or off.
+ * @param  {String} preMessage - logging pre message in front of console message.
+ * @return {Function}            Function for pushing logging messages to console.
+ */
 var curnsole = function(preMessage) {
     return function(message) {
         if (CONFIG.ENABLE_LOG === true) console.log(preMessage + ":" + message);
     }
 }
 
+/**
+ * Options sent to dom parser
+ * @type {Object}
+ */
 var domOptions = {
     errorHandler: {
         warning: curnsole("WARNING"),
@@ -53,41 +60,6 @@ var domOptions = {
         root.cl = cl;
     }
     /**
-     * Give any type of url break into the host and path and return ithem.
-     * @param  {String} String - url to be split
-     * @return {Object} Object literal with two properties: url, path
-     */
-    cl.parsePathName = function(string) {
-        var reg = /.+?\:\/\/.+?(\/.+?)(?:#|\?|$)/;
-        var pathname = reg.exec(string);
-        if (_.isNull(pathname)) return null;
-        return pathname[1];
-    }
-    /**
-     * Given a a url path the domain minus http(s) protocol is returned
-     * @param  {String} URL - or URI
-     * @return {String}     domain without http(s)
-     */
-    cl.parseHostName = function(url) {
-        if (_.isUndefined(url)) return undefined;
-        if (_.isNull(url)) return null;
-        if (url.length === 0) return '';
-        if (url.search(/^https?\:\/\//) != -1)
-            url = url.match(/^https?\:\/\/([^\/?#]+)(?:[\/?#]|$)/i, "");
-        else
-            url = url.match(/^([^\/?#]+)(?:[\/?#]|$)/i, "");
-        return url[1];
-    }
-    /**
-     * Promise wrapper for HTTP requests.
-     * @param  {[type]} options [description]
-     * @return {[type]}         [description]
-     */
-    cl.getHTTPRequest = function(options) {
-        var deferred = Q.defer();
-        return http.request(options);
-    }
-    /**
      * Given a predicate function that returns a boolean value for filtering search results.  Uses underscore filter function.
      * @param  {Object} options Object literal containing array key to list of ad results that need to be filtered and predicate key to filter function.
      * @return {Array}         Filtered array resultset
@@ -100,6 +72,58 @@ var domOptions = {
             throw err;
         }
     }
+    /**
+     * Process command line arguments to set up the options that this application
+     * uses.  Arguments are in through a standard object literal.  If the same parameter
+     * is entered twice only the first entry is recognized.
+     *
+     * Available files are listed below:
+     *
+     * filename: name of file that will results will be saved as.  Default is index.html
+     * filepath: coming soon
+     * searchstring: coming soon
+     * states: coming soon
+     * cities: coming soon
+     * date: coming soon
+     *
+     * @param  {Object} options - cli input that needs to be parsed
+     * @return {Object}           options to drive configuration of the application.
+     */
+    cl.processArgs = function(options) {
+        //Options that the application can use
+        var OPTIONS = ['filename', 'filepath', 'states', 'cities', 'date', 'searchstring'],
+            returnOptions = {},
+            args = _.values(options);
+        _.each(OPTIONS, function(optElement, index) {
+            var fileNameArray = _.filter(args, function(element) {
+                return element.indexOf('-' + optElement + '=') >= 0 && element.length > ('-' + optElement + '=').length;
+            });
+            returnOptions[optElement] = fileNameArray.length > 0 ?
+                fileNameArray[0].slice(fileNameArray[0].indexOf("=") + 1) :
+                CONFIG[optElement.toUpperCase()];
+
+        });
+        //set filepath for filename
+        returnOptions.filepath = path.resolve(__dirname + "/../../../" + CONFIG.STORAGE);
+
+        //Converts string in states value to array.
+        if (_.isString(returnOptions.states)) {
+            returnOptions.states = returnOptions.states.split(",");
+        }
+        //Converts string in cities value to array.
+        if (_.isString(returnOptions.cities)) {
+            returnOptions.cities = returnOptions.cities.split(",");
+        }
+        //Sets date for filtering
+        if (_.isString(returnOptions.date)) {
+            returnOptions.date = returnOptions.date.split("-");
+            returnOptions.date[1] = returnOptions.date[1] - 1;
+            returnOptions.date = moment(returnOptions.date).format();
+        } else {
+            returnOptions.date = moment(moment().toArray().slice(0,3)).format();
+        }
+        return returnOptions;
+    };
     /**
      * Response function from HTTP request to parse craigslist sites html page
      * and write to file.
@@ -144,8 +168,8 @@ var domOptions = {
      * @return {String}             HTML page of ads
      */
     cl.getAdPagesFromSingleCityDomain = function(cityDomain) {
-        return cl.getHTTPRequest({
-                hostname: cl.parseHostName(cityDomain[0].host),
+        return utils.getHTTPRequest({
+                hostname: utils.parseHostName(cityDomain[0].host),
                 path: CONFIG.URI_PATH,
                 method: 'GET'
             })
@@ -172,8 +196,8 @@ var domOptions = {
         var htmlArray = [];
         return Q.allSettled(
             _.map(cityDomains, function(element, index) {
-                return cl.getHTTPRequest({
-                        hostname: cl.parseHostName(element.host),
+                return utils.getHTTPRequest({
+                        hostname: utils.parseHostName(element.host),
                         path: CONFIG.URI_PATH
                     })
                     .then(
@@ -181,7 +205,7 @@ var domOptions = {
                             return success.body.read();
                         },
                         function(error) {
-                            error.message = "Error getting URL: " + cl.parseHostName(element.host) + " & " + CONFIG.URI_PATH + ".  " + error.message;
+                            error.message = "Error getting URL: " + utils.parseHostName(element.host) + " & " + CONFIG.URI_PATH + ".  " + error.message;
                             throw error;
                         })
                     .then(
@@ -230,7 +254,6 @@ var domOptions = {
                 if (error) {
                     throw error;
                 }
-                console.log("Total number of ads returned:" + _.flatten(_.pluck(results, 'value')).length);
                 //NEED TO FILTER ON 'fulfilled' and capture if not all fulfilled
                 return _.flatten(_.pluck(results, 'value'));
             });
@@ -262,6 +285,7 @@ var domOptions = {
         }
         try {
             tmpListing.date = select(node, ".//span[@class='date']")[0].firstChild.data;
+            tmpListing.date = moment(tmpListing.date, 'MMM DD').format();
         } catch (err) {
             tmpListing.date = "'date' couldn't be parsed";
         }
@@ -292,6 +316,17 @@ var domOptions = {
         return tmpListing;
     };
     /**
+     * Given a set of inputs an existing set of ads are filtered on those inputs
+     *     date - Currently on filter on ads is to return all ads submitted on or after the provided date
+     * @param  {Object} input - Object literal containing filter properties and array
+     * @return {Array}         Array of ads meeting filter criteria
+     */
+    cl.filterAds = function(input) {
+        return _.filter(input.ads, function(element) {
+            return !(moment(input.filter.date).isAfter(moment(element.date)));
+        });
+    }
+    /**
      * Clean up string to make suitable link
      * @param  {[type]} string [description]
      * @return {[type]}        [description]
@@ -308,29 +343,58 @@ var domOptions = {
     cl.writeHTMLPage2 = function(adArray) {
         console.log("Writing HTML For " + adArray.length + " Ads.");
         var htmlPage = '';
-        htmlPage += '<!DOCTYPE html><html><header>';
+        htmlPage += '<!DOCTYPE html><html><head>';
         htmlPage += '<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>';
+        htmlPage += '<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>';
+        htmlPage += '<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/united/bootstrap.min.css">';
         htmlPage += '<style>';
         htmlPage += '.back-to-top2{ position:fixed; top:2%; right:2%; }';
         htmlPage += '</style>';
-        htmlPage += '</header><body>';
+        htmlPage += '</head><body><div class="container">';
         htmlPage += 'Page created on: ' + cl.creationDate() + '<br><br><hr><br><br>';
         htmlPage += cl.topMenu(adArray);
-        // htmlPage += '<br>'
+        var colOrder = [
+            {
+                id: 'i',
+                class: 'col-md-1 col-lg-1'
+            }, {
+                id: 'a',
+                class: 'col-md-4 col-lg-4'
+            }, {
+                id: 'price',
+                class: 'col-md-1 col-lg-1'
+            }, {
+                id: 'location',
+                class: 'col-md-2 col-lg-2'
+            }, {
+                id: 'city',
+                class: 'col-md-1 col-lg-1'
+            }, {
+                id: 'date',
+                class: 'col-md-1 col-lg-1'
+            }, {
+                id: 'picture',
+                class: 'col-md-1 col-lg-1'
+            }, {
+                id: 'map',
+                class: 'col-md-1 col-lg-1'
+            }
 
-        var colOrder = ['i', 'a', 'price', 'location', 'city', 'date', 'picture', 'map'];
+        ];
         _.each(_.uniq(_.pluck(adArray, 'state')), function(state, index) {
             htmlPage += '<h1><a name=\'' + cl.linkify(state) + '\'>' + state + '</a></h1>';
             _.each(_.uniq(_.pluck(_.where(adArray, {
                 state: state
             }), 'city')), function(city, index) {
                 htmlPage += '<h2><a name=\'' + cl.linkify(city) + '\'>' + city + '</a></h2>';
-                htmlPage += '<table border="1">';
+                // htmlPage += '<table border="1">';
+                // htmlPage += '<div class="row">';
                 _.each(_.where(adArray, {
                         city: city
                     }),
                     function(ad, index) {
-                        htmlPage += '<tr>';
+                        // htmlPage += '<tr>';
+                        htmlPage += '<div class=\'row\'>';
                         var i;
                         if (_.isUndefined(ad.dataid) || _.isNull(ad.dataid) || ad.dataid.length === 0) {
                             i = '<img alt=\'\' src=\'http://www.craigslist.org/images/peace-sm.jpg\'>';
@@ -341,18 +405,34 @@ var domOptions = {
                         var a = '<a href=\'' + href + '\'>' + ad.title + '</a>';
                         ad['a'] = a;
                         ad['i'] = i;
-                        _.each(colOrder, function(element, index) {
-                            htmlPage += '<td>'
-                            htmlPage += ad[element];
-                            htmlPage += '</td>'
-                        });
-                        htmlPage += '</tr>'
+
+                       htmlPage += '<div class=\'' + colOrder[5].class + '\'>' + moment(ad[colOrder[5].id]).format('MMM Do') + '</div>';
+                        htmlPage += '<div class=\'' + colOrder[0].class + '\'>' + ad[colOrder[0].id] + '</div>';
+                        htmlPage += '<div class=\'' + colOrder[2].class + '\'>' + ad[colOrder[2].id] + '</div>';
+                        htmlPage += '<div class=\'col-md-9 col-lg-9\'>';
+                        htmlPage += '<div class=\'' + colOrder[1].class + '\'>' + ad[colOrder[1].id] + '</div>';
+                        htmlPage += '<div class=\'' + colOrder[3].class + '\'>' + ad[colOrder[3].id] + '</div>';
+                        htmlPage += '<div class=\'' + colOrder[4].class + '\'>' + ad[colOrder[4].id] + '</div>';
+                        
+                        htmlPage += '<div class=\'' + colOrder[6].class + '\'>' + ad[colOrder[6].id] + '</div>';
+                        htmlPage += '<div class=\'' + colOrder[7].class + '\'>' + ad[colOrder[7].id] + '</div>';
+                        htmlPage += '</div>';
+                        // _.each(colOrder, function(element, index) {
+                        //     // htmlPage += '<td>'
+                        //     htmlPage += '<div class=\'' + element.class + '\'>';
+                        //     htmlPage += ad[element.id];
+                        //     // htmlPage += '</td>'
+                        //     htmlPage += '</div>';
+                        // });
+                        // htmlPage += '</tr>'
+                        htmlPage += '</div>';
                     });
-                htmlPage += '</table>'
+                // htmlPage += '</table>'
+                // htmlPage += '</div>';
             });
         });
         htmlPage += '<a href="#" class="back-to-top2">Back to Top</a>';
-        htmlPage += '</body></html>';
+        htmlPage += '</div></body></html>';
         return htmlPage;
     }
     /**
@@ -367,7 +447,11 @@ var domOptions = {
         });
         return htmlPage;
     }
-    cl.creationDate = function(){
+    /**
+     * [creationDate description]
+     * @return {[type]} [description]
+     */
+    cl.creationDate = function() {
         var htmlPage = '';
         var now = moment().format('YYYY-MM-DD hh:mm A');
         htmlPage += now;

@@ -8,30 +8,21 @@ var _ = require('underscore'),
     utils = require('./server/components/utils/index.js'),
     cl = require('./server/components/craigslist/index.js');
 
-var programOptions = utils.processArgs(eval('[' + process.argv[process.argv.length - 1] + ']')[0]);
+var programOptions = cl.processArgs(eval('[' + process.argv[process.argv.length - 1] + ']')[0]);
 
 var options = {
-    hostname: cl.parseHostName(CONFIG.URL_SITES),
-    path: cl.parsePathName(CONFIG.URL_SITES),
+    hostname: utils.parseHostName(CONFIG.URL_SITES),
+    path: utils.parsePathName(CONFIG.URL_SITES),
     method: 'GET'
 };
 var filterOptions = {
     array: [],
     predicate: function(value) {
-        // var test = ['Texas', 'Louisiana', 'California', 'Arizona', 'New Mexico'];//, 'Arkansas', 'Georgia', 'Oklahoma', 'Kansas', 'Nebraska', 'Alabama', 'Montana'];
-        // var test = ['Texas'];
-
-        // return value.title === 'dothan' || value.title === 'auburn';
-        // return _.contains(test, value.state);
-        console.log("_.contains([" + programOptions.states + "], " + value.state + "):" + _.contains(programOptions.states, value.state));
-        console.log("_.contains([" + programOptions.cities + "], " + value.title + "):" + _.contains(programOptions.cities, value.title));
-        console.log(programOptions.cities[0] === value.title);
-        console.log(_.isArray(programOptions.cities));
         return _.contains(programOptions.states, value.state) || _.contains(programOptions.cities, value.title);
     }
 };
 
-cl.getHTTPRequest(options)
+utils.getHTTPRequest(options)
     .then(cl.parseSitesHTML)
     .then(
         function(success, error) {
@@ -63,13 +54,20 @@ cl.getHTTPRequest(options)
             throw error;
         })
     .then(
+        function(success, error) {
+            return cl.filterAds({
+                filter: programOptions,
+                ads: success
+            });
+        }, function(error) {
+            throw error;
+        })
+    .then(
         cl.writeHTMLPage2,
         function(error) {
             throw error;
         })
     .then(function(success, error) {
-            //NOT A PROMISE.  NEEDS TO BE WRAPPED
-            // console.log(success);
             utils.writeFile({
                 filepath: path.resolve(programOptions.filepath, programOptions.filename),
                 contents: success

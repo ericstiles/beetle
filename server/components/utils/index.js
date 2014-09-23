@@ -3,9 +3,7 @@
 var http = require('q-io/http'),
     _ = require('underscore'),
     xpath = require('xpath.js'),
-    fs = require('fs'),
-    qfs = require('q-io/fs'),
-    fse = require('fs-extra'), //redundant to fs but clear
+    fse = require('fs-extra'),
     path = require('path'),
     select = require('xpath.js'),
     dom = require('xmldom').DOMParser,
@@ -38,60 +36,6 @@ var http = require('q-io/http'),
     } else {
         root.utils = utils;
     }
-
-    /**
-     * Process command line arguments to set up the options that this application
-     * uses.  Arguments are in through a standard object literal.  If the same parameter
-     * is entered twice only the first entry is recognized.
-     *
-     * Available files are listed below:
-     *
-     * filename: name of file that will results will be saved as.  Default is index.html
-     * filepath: coming soon
-     * searchstring: coming soon
-     * states: coming soon
-     * cities: coming soon
-     * date: coming soon
-     *
-     * @param  {Object} options - cli input that needs to be parsed
-     * @return {Object}           options to drive configuration of the application.
-     */
-    utils.processArgs = function(options) {
-        //Options that the application can use
-        var OPTIONS = ['filename', 'filepath', 'states', 'cities', 'date', 'searchstring'],
-            returnOptions = {},
-            args = _.values(options);
-
-            console.log('args:' + args);
-
-        _.each(OPTIONS, function(optElement, index) {
-
-            console.log("optElement:" + optElement);
-
-            var fileNameArray = _.filter(args, function(element) {
-                console.log('--args:' + element);
-                return element.indexOf('-' + optElement + '=') >= 0 && element.length > ('-' + optElement + '=').length;
-            });
-            console.log(' fileNameArray:' + fileNameArray);
-            returnOptions[optElement] = fileNameArray.length > 0 ?
-                fileNameArray[0].slice(fileNameArray[0].indexOf("=") + 1) :
-                CONFIG[optElement.toUpperCase()];
-
-        });
-        //set filepath for filename
-        returnOptions.filepath = path.resolve(__dirname + "/../../../" + CONFIG.STORAGE);
-
-        //Converts string in states value to array.
-        if (_.isString(returnOptions.states)) {
-            returnOptions.states = returnOptions.states.split(",");
-        }
-                //Converts string in cities value to array.
-        if (_.isString(returnOptions.cities)) {
-            returnOptions.cities = returnOptions.cities.split(",");
-        }
-
-        return returnOptions;
-    };
     /**
      * Give any type of url break into the host and path and return ithem.
      * @param  {String} String - url to be split
@@ -136,7 +80,7 @@ var http = require('q-io/http'),
         //CHECK OPTIONS
         var deferred = Q.defer();
         Q.nfcall(fse.ensureFile, options.filepath)
-            .then(fse.writeJSON(options.filepath, options.contents, deferred.resolve));
+            .then(fse.writeJSON(options.filepath, options.contents, deferred.resolve(options.filepath)));
         return deferred.promise;
     }
     /*
@@ -149,26 +93,16 @@ var http = require('q-io/http'),
         //CHECK OPTIONS
         var deferred = Q.defer()
         fse.ensureFile(options.filepath, function(error) {
-
-
             if (error) {
                 error.message = "Error confirming html file exists:" + error.message;
                 throw error;
             } else {
                 fse.writeFile(options.filepath, options.contents, function(error, data) {
-
                     if (error) deferred.reject(error) // rejects the promise with `er` as the reason
                     else deferred.resolve(data) // fulfills the promise with `data` as the value
-
-
-                    // if (error) {
-                    //     error.message = "Error writing html file:" + error.message;
-                    //     throw error;
-                    // }
                 })
             }
         });
-        // return 'Success writing files';
         return deferred.promise // the promise is returned
     }
     /**
@@ -178,12 +112,6 @@ var http = require('q-io/http'),
      */
     utils.linkify = function(string) {
         return encodeURIComponent(string.toLowerCase());
-    }
-    utils.creationDate = function() {
-        var htmlPage = '';
-        var now = moment().format('YYYY-MM-DD hh:mm A');
-        htmlPage += now;
-        return htmlPage;
     }
     /**
      * Add your own custom functions to this object.
