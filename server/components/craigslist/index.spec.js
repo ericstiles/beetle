@@ -97,33 +97,33 @@ describe('Test SPEC for craigslist sites html page', function() {
                     done(e.name + "|" + e.message)
                 });
     });
-    it('should write a file to test location', function(done) {
-        var options = {
-            filepath: path.resolve(__dirname + "/../../../" + CONFIG.STORAGE, CONFIG.WRITE_TXT_FILENAME),
-            contents: 'test contents'
-        }
-        cl.writeFile(options)
-        //NEED TO WRAP WITH PROMISE TO VALIDATE SUCCESS
-        done();
-    });
-    it('should write json to test location', function(done) {
-        var options = {
-            filepath: path.resolve(__dirname + "/../../../" + CONFIG.STORAGE, CONFIG.WRITE_JSON_FILENAME),
-            contents: {
-                test: 'contents'
-            }
-        }
-        cl.writeJSON(options)
-            .then(
-                function(error, success) {
-                    if (!_.isUndefined(error) && !_.isNull(error)) {
-                        done();
-                    } else {
-                        done(error);
-                    }
-                }
-        )
-    });
+    // it('should write a file to test location', function(done) {
+    //     var options = {
+    //         filepath: path.resolve(__dirname + "/../../../" + CONFIG.STORAGE, CONFIG.WRITE_TXT_FILENAME),
+    //         contents: 'test contents'
+    //     }
+    //     cl.writeFile(options)
+    //     //NEED TO WRAP WITH PROMISE TO VALIDATE SUCCESS
+    //     done();
+    // });
+    // it('should write json to test location', function(done) {
+    //     var options = {
+    //         filepath: path.resolve(__dirname + "/../../../" + CONFIG.STORAGE, CONFIG.WRITE_JSON_FILENAME),
+    //         contents: {
+    //             test: 'contents'
+    //         }
+    //     }
+    //     cl.writeJSON(options)
+    //         .then(
+    //             function(error, success) {
+    //                 if (!_.isUndefined(error) && !_.isNull(error)) {
+    //                     done();
+    //                 } else {
+    //                     done(error);
+    //                 }
+    //             }
+    //     )
+    // });
     it('should parse html page and return array of domains including state of city domain', function(done) {
         var options = {
             hostname: cl.parseHostName(testSuccessUrl),

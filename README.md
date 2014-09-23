@@ -2,6 +2,9 @@ beetle
 ======
 ##What is it?
 A tool to aggregate automotive craigslist searches from multiple locations into a single html page view.
+
+**This tool is still under development and can experience major changes**
+
 ##How do I install it?
 This project is not in the NPM respository
 * download a copy of the code
@@ -21,19 +24,31 @@ When completed open file
 ##How do I modify it for my use?
 Look at *./config/default.js* for the property URI_SEARCH_PATH.  This is a craigslist uri path with a standard set of search parameters.  Modify these as needed.
 
-The default search path is
+The default configuration is
+```json
+module.exports = {
+    ROOT: './',
+    STORAGE: 'storage',
+    URL_SITES: 'http://www.craigslist.org/about/sites',
+    URI_PATH: '/search/cto?query=beetle+-super&minAsk=50&maxAsk=10000&autoMinYear=1955&autoMaxYear=1975',
+    FILENAME: 'index.html',
+    ENABLE_LOG: false,
+    STATES: ['Texas', 'Louisiana'],
+    CITIES: ['dothan', 'auburn']
+};
+```
+
+Notice the default search path in the above configuration is
 ```
 /search/cto?query=beetle&minAsk=50&maxAsk=1000&autoMinYear=1950&autoMaxYear=1980
 ```
 
-Look at *./index.js* for a PREDICATE validation function to determine how results to group together.  Results can be grouped by domain, city, or State as seen on the http://craigslist.com/about/sites html page.  
-
-The default validation function is
+The default validation function to filter search all search results is
 ```js
 function(value) {
-    var test = ['Texas', 'Louisiana', 'California', 'Arizona'];
-    return _.contains(test, value.state);
-},
+    return _.contains(programOptions.states, value.state) || 
+           _.contains(programOptions.cities, value.title);
+}
 ```
 
 ### From the Command Line
@@ -43,17 +58,22 @@ Using Grunts format command line arguments can be passed to the application.  Cu
 grunt update
 
 #Setting file where ads can be stored
-grunt update:-filname=georgia-ads.html
+grunt update:-filename=georgia-ads.html
+
+#Setting filter based on states.
+grunt update:-states=Texas,Georgia,Arkansas
+
+#Setting filter based on cities
+grunt update:-cities=mobile,dothan
+
+#Combining arguments
+grunt update:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan
 ```
+##Warning
+**States and Cities with spaces do yet work for filtering**
 
 ###Example Predicates
-Grouping on cities
-```js
-function(value) {
-    return value.title === 'dothan' || value.title === 'auburn';
-},
-```
-Searching on a single domain
+Example predicates searching on a single domain requires modifying the actual function
 ```js
 function(value) {
     return value.domain === 'chicago.craigslist.org';
@@ -93,8 +113,10 @@ Note that there is extra stuff in the project.  This project started life using 
 I need to 
 * add better error handling
 * add a few more unit tests
+* make everything a promise
+* move functionality to utils/index.js file
 
 I want to
 * make the chaining more dynamic
-* push results to a database or someother store
+* push results to a database or some gtother store
 * write a front-end UI to this tool making it more user friendly

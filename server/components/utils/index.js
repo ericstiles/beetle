@@ -57,22 +57,39 @@ var http = require('q-io/http'),
      * @return {Object}           options to drive configuration of the application.
      */
     utils.processArgs = function(options) {
-
-        var OPTIONS = ['filename', 'filepath', 'date', 'cities', 'states', 'searchstring'],
+        //Options that the application can use
+        var OPTIONS = ['filename', 'filepath', 'states', 'cities', 'date', 'searchstring'],
             returnOptions = {},
             args = _.values(options);
 
+            console.log('args:' + args);
+
         _.each(OPTIONS, function(optElement, index) {
 
+            console.log("optElement:" + optElement);
+
             var fileNameArray = _.filter(args, function(element) {
+                console.log('--args:' + element);
                 return element.indexOf('-' + optElement + '=') >= 0 && element.length > ('-' + optElement + '=').length;
             });
+            console.log(' fileNameArray:' + fileNameArray);
             returnOptions[optElement] = fileNameArray.length > 0 ?
                 fileNameArray[0].slice(fileNameArray[0].indexOf("=") + 1) :
                 CONFIG[optElement.toUpperCase()];
 
         });
-        returnOptions.filepath = path.resolve(__dirname + "/../../../" + CONFIG.STORAGE)
+        //set filepath for filename
+        returnOptions.filepath = path.resolve(__dirname + "/../../../" + CONFIG.STORAGE);
+
+        //Converts string in states value to array.
+        if (_.isString(returnOptions.states)) {
+            returnOptions.states = returnOptions.states.split(",");
+        }
+                //Converts string in cities value to array.
+        if (_.isString(returnOptions.cities)) {
+            returnOptions.cities = returnOptions.cities.split(",");
+        }
+
         return returnOptions;
     };
     /**
@@ -130,20 +147,29 @@ var http = require('q-io/http'),
      */
     utils.writeFile = function(options) {
         //CHECK OPTIONS
+        var deferred = Q.defer()
         fse.ensureFile(options.filepath, function(error) {
+
+
             if (error) {
                 error.message = "Error confirming html file exists:" + error.message;
                 throw error;
             } else {
-                fse.writeFile(options.filepath, options.contents, function(error) {
-                    if (error) {
-                        error.message = "Error writing html file:" + error.message;
-                        throw error;
-                    }
+                fse.writeFile(options.filepath, options.contents, function(error, data) {
+
+                    if (error) deferred.reject(error) // rejects the promise with `er` as the reason
+                    else deferred.resolve(data) // fulfills the promise with `data` as the value
+
+
+                    // if (error) {
+                    //     error.message = "Error writing html file:" + error.message;
+                    //     throw error;
+                    // }
                 })
             }
         });
-        return 'Success writing files';
+        // return 'Success writing files';
+        return deferred.promise // the promise is returned
     }
     /**
      * Clean up string to make suitable link

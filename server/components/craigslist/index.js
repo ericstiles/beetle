@@ -196,18 +196,6 @@ var domOptions = {
         )
     }
     /**
-     * [writeJSON description]
-     * @param  {[type]} options [description]
-     * @return {[type]}         [description]
-     */
-    cl.writeJSON = function(options) {
-        //CHECK OPTIONS
-        var deferred = Q.defer();
-        Q.nfcall(fse.ensureFile, options.filepath)
-            .then(fse.writeJSON(options.filepath, options.contents, deferred.resolve));
-        return deferred.promise;
-    }
-    /**
      * Given an array HTML Pages containing ads parse those pages and return a single array of ads
      * @param  {Arrat} htmlArray - Array of html pages that need to be parsed
      * @return {[type]} Array of ad information as a JSON Object
@@ -303,30 +291,6 @@ var domOptions = {
         }
         return tmpListing;
     };
-    /*
-     * Asynchronous wrapper that writes String object to file.  Does not append, but overwrites file
-     * @param  {String}   filePath location of file that should be written
-     * @param  {String}   contents String that should be written
-     * @param  {Function} callback Function to call on completion
-     */
-    cl.writeFile = function(options) {
-        //CHECK OPTIONS
-        console.log(options.filepath);
-        fse.ensureFile(options.filepath, function(error) {
-            if (error) {
-                error.message = "Error confirming html file exists:" + error.message;
-                throw error;
-            } else {
-                fse.writeFile(options.filepath, options.contents, function(error) {
-                    if (error) {
-                        error.message = "Error writing html file:" + error.message;
-                        throw error;
-                    }
-                })
-            }
-        });
-        return 'Success writing files';
-    }
     /**
      * Clean up string to make suitable link
      * @param  {[type]} string [description]
