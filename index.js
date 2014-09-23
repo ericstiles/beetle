@@ -18,15 +18,6 @@ var options = {
 var filterOptions = {
     array: [],
     predicate: function(value) {
-        // var test = ['Texas', 'Louisiana', 'California', 'Arizona', 'New Mexico'];//, 'Arkansas', 'Georgia', 'Oklahoma', 'Kansas', 'Nebraska', 'Alabama', 'Montana'];
-        // var test = ['Texas'];
-
-        // return value.title === 'dothan' || value.title === 'auburn';
-        // return _.contains(test, value.state);
-        console.log("_.contains([" + programOptions.states + "], " + value.state + "):" + _.contains(programOptions.states, value.state));
-        console.log("_.contains([" + programOptions.cities + "], " + value.title + "):" + _.contains(programOptions.cities, value.title));
-        console.log(programOptions.cities[0] === value.title);
-        console.log(_.isArray(programOptions.cities));
         return _.contains(programOptions.states, value.state) || _.contains(programOptions.cities, value.title);
     }
 };
