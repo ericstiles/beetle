@@ -71,22 +71,22 @@ function(input) {
 Using Grunts format command line arguments can be passed to the application.  Currently only the file name that the html is written to can be set.  See the following example
 ```
 #Default
-grunt update
+grunt modsearch
 
 #Setting file where ads can be stored
-grunt update:-filename=georgia-ads.html
+grunt modsearch:-filename=georgia-ads.html
 
 #Setting filter based on states.
-grunt update:-states=Texas,Georgia,Arkansas
+grunt modsearch:-states=Texas,Georgia,Arkansas
 
 #Setting filter based on cities
-grunt update:-cities=mobile,dothan
+grunt modsearch:-cities=mobile,dothan
 
 #Setting filter based on date
-grunt update:-date=2014-09-21
+grunt modsearch:-date=2014-09-21
 
 #Combining arguments
-grunt update:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan:-date=2014-09-21
+grunt modsearch:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan:-date=2014-09-21
 ```
 ##Warning
 **States and Cities with spaces do yet work for filtering**
