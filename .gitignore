@@ -1,10 +1,33 @@
-node_modules
 public
 .tmp
 .sass-cache
 .idea
-client/bower_components
 dist
-/server/config/local.env.js
 
-storage
+lib-cov
+*.seed
+*.log
+*.csv
+*.dat
+*.out
+*.pid
+*.gz
+
+pids
+logs
+results
+
+node_modules
+.DS_Store
+.sonar
+
+#files created for instrumentation
+test/coverage
+test/storage
+
+#files created when running search
+storage/
+
+#file for sublime text repl
+test.js
+

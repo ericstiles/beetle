@@ -5,10 +5,13 @@ var _ = require('underscore'),
     fse = require('fs-extra'),
     Q = require('q'),
     _ = require('underscore'),
-    utils = require('./server/components/utils/index.js'),
-    cl = require('./server/components/craigslist/index.js');
+    utils = require('./lib/utils/index.js'),
+    cl = require('./lib/craigslist/index.js');
 
-var programOptions = cl.processArgs(eval('[' + process.argv[process.argv.length - 1] + ']')[0]);
+var programOptions;
+/* jshint ignore:start */
+programOptions = cl.processArgs(eval('[' + process.argv[process.argv.length - 1] + ']')[0]);
+/* jshint ignore:end */
 
 var options = {
     hostname: utils.parseHostName(CONFIG.URL_SITES),
@@ -59,7 +62,8 @@ utils.getHTTPRequest(options)
                 filter: programOptions,
                 ads: success
             });
-        }, function(error) {
+        },
+        function(error) {
             throw error;
         })
     .then(
@@ -69,12 +73,12 @@ utils.getHTTPRequest(options)
         })
     .then(function(success, error) {
             utils.writeFile({
-                filepath: path.resolve(programOptions.filepath, programOptions.filename),
-                contents: success
-            })
+                    filepath: path.resolve(programOptions.filepath, programOptions.filename),
+                    contents: success
+                })
                 .then(function(success, error) {
-                    console.log(success);
-                    console.log(error);
+                    // console.log(success);
+                    // console.log(error);
                     if (error) {
                         throw (error);
                     }

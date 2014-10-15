@@ -14,10 +14,26 @@ This project is not in the NPM respository
 npm install
 ```
 ##How do I run it?
+###Setting file where ads can be stored
+grunt modsearch:-filename=georgia-ads.html
+
+###Setting filter based on states.
+grunt update:-states=Texas,Georgia,Arkansas
+
+###Setting filter based on cities
+grunt modsearch:-cities=mobile,dothan
+
+###Setting filter based on date
+grunt modsearch:-date=2014-09-21
+
+###Combining arguments
+grunt modsearch:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan:-date=2014-09-21
 ```
-grunt update
+##WWarning
+**States and Cities with spaces do yet work for filtering**
+date
 ```
-When completed open file
+###When completed open file
 ```
 ./storage/index.html
 ```
@@ -46,7 +62,7 @@ Another example to try is
 ```
 /search/sss?query=welder&sort=rel
 ```
-##How does the application filter results
+##How does the application filter results?
 The application uses to filtering approaches based on the attributes that need to be filter
 1. States and Cities to reduce the domains that are used to retrieve results
 2. Filtering on results once all have been retrieved from the requested domains
@@ -70,26 +86,6 @@ function(input) {
 ### From the Command Line
 Using Grunts format command line arguments can be passed to the application.  Currently only the file name that the html is written to can be set.  See the following example
 ```
-#Default
-grunt update
-
-#Setting file where ads can be stored
-grunt update:-filename=georgia-ads.html
-
-#Setting filter based on states.
-grunt update:-states=Texas,Georgia,Arkansas
-
-#Setting filter based on cities
-grunt update:-cities=mobile,dothan
-
-#Setting filter based on date
-grunt update:-date=2014-09-21
-
-#Combining arguments
-grunt update:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan:-date=2014-09-21
-```
-##Warning
-**States and Cities with spaces do yet work for filtering**
 
 ###Example Predicates
 Example predicates searching on a single domain requires modifying the actual function
@@ -123,10 +119,15 @@ The parameters that the application looks for in an ad are
 * title
 * pic
 * map
+
 #Testing
+Some opportunities here.  Tests are written for most of the code I wrote.  Missing tests for promises, and code from used from other developers.
 ```js
-grunt test:server
+grunt test
+
+grunt coverage
 ```
+
 #Various
 Note that there is extra stuff in the project.  This project started life using the yeoman fullstack generator.  The extraneous code hasn't been pulled out yet.
 #Next Steps
