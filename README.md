@@ -15,28 +15,38 @@ npm install
 ```
 ##How do I run it?
 ###Setting file where ads can be stored
-grunt modsearch:-filename=georgia-ads.html
+```
+grunt search:-filename=georgia-ads.html
+```
 
 ###Setting filter based on states.
-grunt update:-states=Texas,Georgia,Arkansas
+```
+grunt search:-states=Texas,Georgia,Arkansas
+```
 
 ###Setting filter based on cities
-grunt modsearch:-cities=mobile,dothan
+```
+grunt search:-cities=mobile,dothan
+```
 
 ###Setting filter based on date
-grunt modsearch:-date=2014-09-21
+```
+grunt search:-date=2014-09-21
+```
 
 ###Combining arguments
-grunt modsearch:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan:-date=2014-09-21
 ```
-##WWarning
+grunt search:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan:-date=2014-09-21
+```
+
+##Warning
 **States and Cities with spaces do yet work for filtering**
-date
-```
+
 ###When completed open file
 ```
-./storage/index.html
+./storage/<chosen file name>
 ```
+
 ##How do I modify it for my use?
 Look at *./config/default.js* for the property URI_SEARCH_PATH.  This is a craigslist uri path with a standard set of search parameters.  Modify these as needed.
 
@@ -58,10 +68,12 @@ Notice the default search path in the above configuration is
 ```
 /search/cto?query=beetle&minAsk=50&maxAsk=1000&autoMinYear=1950&autoMaxYear=1980
 ```
+
 Another example to try is
 ```
 /search/sss?query=welder&sort=rel
 ```
+
 ##How does the application filter results?
 The application uses to filtering approaches based on the attributes that need to be filter
 1. States and Cities to reduce the domains that are used to retrieve results
@@ -75,6 +87,7 @@ function(value) {
            _.contains(programOptions.cities, value.title);
 }
 ```
+
 The following function demonstrates filtering ads on attribute values
 ```js
 function(input) {
@@ -83,27 +96,7 @@ function(input) {
     });
 }
 ```
-### From the Command Line
-Using Grunts format command line arguments can be passed to the application.  Currently only the file name that the html is written to can be set.  See the following example
-```
-#Default
-grunt modsearch
 
-#Setting file where ads can be stored
-grunt modsearch:-filename=georgia-ads.html
-
-#Setting filter based on states.
-grunt modsearch:-states=Texas,Georgia,Arkansas
-
-#Setting filter based on cities
-grunt modsearch:-cities=mobile,dothan
-
-#Setting filter based on date
-grunt modsearch:-date=2014-09-21
-
-#Combining arguments
-grunt modsearch:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan:-date=2014-09-21
-```
 ##Warning
 **States and Cities with spaces do yet work for filtering**
 
@@ -116,6 +109,7 @@ function(value) {
 ```
 ###WARNING
 Aggregating a large number ads from many different domains will cause performance issues.  Pulling ads from three different domains generally takes about 8 seconds.
+
 ##How does it work?
 Promises...
 
