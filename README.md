@@ -97,7 +97,7 @@ function(input) {
 }
 ```
 
-##Warning
+###Warning
 **States and Cities with spaces do yet work for filtering**
 
 ###Example Predicates
