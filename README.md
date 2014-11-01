@@ -39,7 +39,7 @@ grunt search:-date=2014-09-21
 grunt search:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan:-date=2014-09-21
 ```
 
-##Warning
+###Warning
 **States and Cities with spaces do yet work for filtering**
 
 ###When completed open file
