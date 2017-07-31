@@ -1,6 +1,6 @@
 beetle
 ======
-##What is it?
+## What is it?
 A tool to aggregate automotive craigslist searches from multiple locations into a single html page view.
 
 **This tool is still under development and can experience major changes**
@@ -13,13 +13,13 @@ This project is not in the NPM respository
 ```
 npm install
 ```
-##How do I run it?
-###Setting file where ads can be stored
+## How do I run it?
+### Setting file where ads can be stored
 ```
 grunt search:-filename=georgia-ads.html
 ```
 
-###Setting filter based on states.
+### Setting filter based on states.
 ```
 grunt search:-states=Texas,Georgia,Arkansas
 ```
@@ -29,25 +29,25 @@ grunt search:-states=Texas,Georgia,Arkansas
 grunt search:-cities=mobile,dothan
 ```
 
-###Setting filter based on date
+### Setting filter based on date
 ```
 grunt search:-date=2014-09-21
 ```
 
-###Combining arguments
+### Combining arguments
 ```
 grunt search:-filename=ads.html:-states=Texas,California:-cities=mobile,dothan:-date=2014-09-21
 ```
 
-###Warning
+### Warning
 **States and Cities with spaces do yet work for filtering**
 
-###When completed open file
+### When completed open file
 ```
 ./storage/<chosen file name>
 ```
 
-##How do I modify it for my use?
+## How do I modify it for my use?
 Look at *./config/default.js* for the property URI_SEARCH_PATH.  This is a craigslist uri path with a standard set of search parameters.  Modify these as needed.
 
 The default configuration is
@@ -74,7 +74,7 @@ Another example to try is
 /search/sss?query=welder&sort=rel
 ```
 
-##How does the application filter results?
+## How does the application filter results?
 The application uses to filtering approaches based on the attributes that need to be filter
 1. States and Cities to reduce the domains that are used to retrieve results
 2. Filtering on results once all have been retrieved from the requested domains
@@ -97,20 +97,20 @@ function(input) {
 }
 ```
 
-###Warning
+### Warning
 **States and Cities with spaces do yet work for filtering**
 
-###Example Predicates
+### Example Predicates
 Example predicates searching on a single domain requires modifying the actual function
 ```js
 function(value) {
     return value.domain === 'chicago.craigslist.org';
 },
 ```
-###WARNING
+### WARNING
 Aggregating a large number ads from many different domains will cause performance issues.  Pulling ads from three different domains generally takes about 8 seconds.
 
-##How does it work?
+## How does it work?
 Promises...
 
 In *./index.js* Promises are chained using **then** where the following functions are run
