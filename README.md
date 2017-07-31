@@ -134,7 +134,7 @@ The parameters that the application looks for in an ad are
 * pic
 * map
 
-#Testing
+# Testing
 Some opportunities here.  Tests are written for most of the code I wrote.  Missing tests for promises, and code from used from other developers.
 ```js
 grunt test
@@ -142,9 +142,9 @@ grunt test
 grunt coverage
 ```
 
-#Various
+# Various
 Note that there is extra stuff in the project.  This project started life using the yeoman fullstack generator.  The extraneous code hasn't been pulled out yet.
-#Next Steps
+# Next Steps
 I need to 
 * add better error handling
 * add a few more unit tests
