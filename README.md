@@ -24,7 +24,7 @@ grunt search:-filename=georgia-ads.html
 grunt search:-states=Texas,Georgia,Arkansas
 ```
 
-###Setting filter based on cities
+### Setting filter based on cities
 ```
 grunt search:-cities=mobile,dothan
 ```
