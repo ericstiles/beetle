@@ -5,7 +5,7 @@ A tool to aggregate automotive craigslist searches from multiple locations into 
 
 **This tool is still under development and can experience major changes**
 
-##How do I install it?
+## How do I install it?
 This project is not in the NPM respository
 * download a copy of the code
 * *cd* to the beetle folder
